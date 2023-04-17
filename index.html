@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -15,53 +14,60 @@
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="icon" href="./img/omaii-icono.ico">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>O'maii Surfing</title>
 </head>
 
 <body>
-  <header class="header-index">
-    <section>
-      <nav>
-        <div class="contenedor-nav-index">
-          <div>
-            <h1>
-              <a href="./index.html" id="logo" class="titulo-principal">O'maii Surfing™</a>
-            </h1>
-          </div>
-          <div class="contenedor-navlist1-y-2">
-            <ul class="nav-list1">
-              <li class="li-estilos"><img src="./img/icono-contacto-blanco.png" alt="icono-contacto"
-                  class="iconos-nav-index"><a href="./pages/contacto.html" class="efecto-hover2">Crear Cuenta</a>
-              </li>
-              <li class="li-estilos"><img src="./img/location-icono-blanco.png" alt="icono-mapa"
-                  class="iconos-nav-index"><a href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank"
-                  class="efecto-hover2">Donde estamos</a>
-              </li>
-            </ul>
-            <ul class="nav-list2">
-              <li><a href="./pages/surf.html" class="botonesnavegacion efecto-hover">Surf</a></li>
-              <li><a href="./pages/clases.html" class="botonesnavegacion efecto-hover">Clases</a></li>
-              <li><a href="./pages/productos.html" class="botonesnavegacion efecto-hover">Productos</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="texto-portada">
-        <!-- Este h3 es adrede ya que es menos relevante que el h2 que lo acompaña debajo -->
-        <h3 class="texto-portada1">OMAII - CLASES DE SURF, TRABAJO Y SURF, PLAYA Y SURF</h3>
-        <h2 class="buenos-650">Buenos momentos</h2>
-        <h2 class="y-650">&</h2>
-        <h2 class="experiencias-650">experiencias inolvidables</h2>
-        <h2 class="texto-portada2"><strong class="buenosmomentos">Buenos momentos</strong> & experiencias inolvidables
-        </h2>
-      </div>
 
-      <figure>
-        <video autoplay muted loop plays-inline src="./videos/videosurf.mp4" class="videoindex"></video>
-      </figure>
-    </section>
-  </header>
+  <div class="portada">
+
+    <header>
+
+      <nav class="header__nav">
+
+        <div>
+          <h1>
+            <a class="header__title" href="./index.html" id="logo">O'maii Surfing™</a>
+          </h1>
+        </div>
+
+        <div class="header__lists">
+          <ul class="header__list1">
+            <li class="header__item"><img class="header__icon" src="./img/icono-contacto-blanco.png" alt="icono-contacto"><a class="header__item-href1" href="./pages/contacto.html">Crear Cuenta</a>
+            </li>
+            <li class="header__item"><img class="header__icon" src="./img/location-icono-blanco.png" alt="icono-mapa"><a class="header__item-href1" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde estamos</a>
+            </li>
+          </ul>
+          <ul class="header__list2">
+            <li><a class="header__item-href2 botonesnavegacion" href="./pages/surf.html">Surf</a></li>
+            <li><a class="header__item-href2 botonesnavegacion" href="./pages/clases.html">Clases</a></li>
+            <li><a class="header__item-href2 botonesnavegacion" href="./pages/productos.html">Productos</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+
+    </header>
+
+    
+
+    <div class="portada__texto">
+      <!-- Este h3 es adrede ya que es menos relevante que el h2 que lo acompaña debajo -->
+      <h3 class="portada__h3">OMAII - CLASES DE SURF, TRABAJO Y SURF, PLAYA Y SURF</h3>
+      <h2 class="portada__h2-1">Buenos momentos</h2>
+      <h2 class="portada__h2-2">&</h2>
+      <h2 class="portada__h2-3">experiencias inolvidables</h2>
+      <h2 class="portada__h2-4"><strong class="portada__h2-4-strong">Buenos momentos</strong> & experiencias inolvidables
+      </h2>
+    </div>
+
+    <figure>
+      <video class="portada__video" autoplay muted loop plays-inline src="./videos/videosurf.mp4"></video>
+    </figure>
+
+  </div>
 
   <main>
 
@@ -178,7 +184,10 @@
         </div>
       </div>
       <div class="container-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/hxI8e4OxLX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="videodeyoutube"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hxI8e4OxLX8" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen class="videodeyoutube"></iframe>
       </div>
     </section>
 
