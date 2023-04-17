@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <span id="subir" class="subir"></span>
+  <header class="header-contacto">
+    <h1 class="h1-clases">
+      <a href="../index.html" id="logo" class="h1-contacto" style="color: black;">O'maii Surfing™</a>
+    </h1>
+    <nav>
+      <ul class="ul-clases1">
+        <li class="li-estilos"> <img src="../img/icono-contacto.png" alt="icono-contacto" style="width: 25px;"><a href="./contacto.html" style="color: black;">Crear Cuenta</a>
+        </li>
+        <li class="li-estilos"><img src="../img/location-icono.png" alt="icono-mapa" style="width: 25px;" class=""> <a href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank" style="color: black;">Donde estamos</a>
+        </li>
+      </ul>
+      <ul class="ul-clases2">
+        <li><a href="./surf.html" class="botonesnavegacion-productos" style="color: black;">Surf</a></li>
+        <li><a href="./clases.html" class="botonesnavegacion-productos" style="color: black;">Clases</a></li>
+        <li><a href="./productos.html" class="botonesnavegacion-productos" style="color: black;">Productos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="seccion-contacto" style="font-size: 1.2rem;">
+      <h2>Crear una nueva cuenta</h2>
+      <span style="text-decoration: underline;">Información personal</span>
+      <form action="" class="form-contacto">
+        <div>
+          <label for="nombre">Nombre: <span class="asteriscosrojos">*</span></label>
+          <input type="text" id="nombre" style="width: 200px">
+        </div>
+        <div>
+          <label for="apellido">Apellido: <span class="asteriscosrojos">*</span></label>
+          <input type="text" id="apellido">
+        </div>
+        <div>
+          <label for="news">¿Desea recibir las últimas noticias y publicidades de nuestro
+            sitio?</label>
+          <input type="checkbox" id="news">
+        </div>
+        <div>
+          <label for="nacimiento">Fecha de nacimiento:</label>
+          <input type="date" id="nacimiento">
+        </div>
+        <div>
+          <label for="dni">DNI: </label>
+          <input type="text" id="dni">
+        </div>
+        <div>
+          <span>Género:</span>
+          <label for="hombre">Hombre</label>
+          <input type="radio" name="genero" id="hombre">
+          <label for="mujer">Mujer</label>
+          <input type="radio" name="genero" id="mujer">
+        </div>
+      </form>
+    
+      <span style="text-decoration: underline;">Informacion de inicio de sesión</span>
+      <div class="div-informacion">
+      <form action="" class="form-contacto">
+        <div>
+          <label for="email">Correo electronico: <span class="asteriscosrojos">*</span></label>
+          <input type="email" id="email" style="width: 300px">
+        </div>
+        <div>
+          <label for="contraseña">Contraseña: <span class="asteriscosrojos">*</span></label>
+          <input type="password" id="contraseña">
+        </div>
+      </form>
+      <div class="boton-cuenta">
+      <button class="btn">Crear Cuenta</button>
+    </div>
+    </div>
+    </section>
+  </main>
+  <a href="#subir"><img src="../img/flechitaparaarriba.png" class="iconoflecha" alt="iconoflecha"></a>
+
+  <footer class="footer">
+
+    <div class="grilla-iconos-footer">
+
+      <div class="div-1-footer"></div>
+      <figure class="iconosdefooter">
+        <img src="../img/iconofacebook.jpg" class="iconofacebook" alt="iconofacebook">
+        <img src="../img/iconoinstagram.jpg" class="iconoinstagram" alt="iconoinstagram">
+        <img src="../img/iconotwitter.jpg" class="iconotwitter" alt="iconotwitter">
+        <img src="../img/iconoyoutube.jpg" class="iconoyoutube" alt="iconoyoutube">
+        <img src="../img/iconotelefono.jpg" class="iconotelefono" alt="iconotelefono">
+      </figure>
+      <div class="div-2-footer"></div>
+
+    </div>
+
+    <div class="encerrarfooter">
+
+      <span class="footertituloprincipal">O'maii Surfing™</span>
+
+      <div class="derechosreservados">
+        <img src="../img/iconocopyright.jpg" class="iconocopyright" alt="iconocopyright">
+        <span>O'maii Surfing Todos los derechos reservados, 2022</span>
+      </div>
+
+    </div>
+
+    <form action="" class="formulario">
+
+      <label for="campo-de-mensaje">Escribinos un mensaje</label>
+
+      <div>
+        <label for="asunto">Asunto</label>
+        <select name="asunto" id="asunto">
+          <option value="mensaje">Mensaje</option>
+          <option value="reclamo">Reclamo</option>
+          <option value="recomendacion">Recomendación</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div>
+        <textarea name="campo-de-mensaje" id="campo-de-mensaje" cols="30" rows="10"></textarea>
+      </div>
+      <button style="width: 52px; height: 25px;">Enviar</button>
+    </form>
+
+    <div class="hypertextosfooter">
+      <a href="about:blank" target="_blank" class="hypertextosfooter">Empleos</a>
+      <a href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank" class="hypertextosfooter">Mapa del sitio</a>
+      <a href="about:blank" target="_blank" class="hypertextosfooter">Preguntas frecuentes</a>
+    </div>
+
+  </footer>
+</body>
+
+</html>

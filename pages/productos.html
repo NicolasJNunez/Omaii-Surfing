@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <title>Productos</title>
+</head>
+
+<body>
+  <span id="subir" class="subir"></span>
+  <header class="header-contacto">
+    <h1 class="h1-clases">
+      <a href="../index.html" id="logo" class="h1-contacto" style="color: black;">O'maii Surfing™</a>
+    </h1>
+    <nav>
+      <ul class="ul-clases1">
+        <li class="li-estilos"> <img src="../img/icono-contacto.png" alt="icono-contacto" style="width: 25px;"><a
+            href="./contacto.html" style="color: black;">Crear Cuenta</a>
+        </li>
+        <li class="li-estilos"><img src="../img/location-icono.png" alt="icono-mapa" style="width: 25px;" class=""> <a
+            href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank" style="color: black;">Donde estamos</a>
+        </li>
+      </ul>
+      <ul class="ul-clases2">
+        <li><a href="./surf.html" class="botonesnavegacion-productos" style="color: black;">Surf</a></li>
+        <li><a href="./clases.html" class="botonesnavegacion-productos" style="color: black;">Clases</a></li>
+        <li><a href="./productos.html" class="botonesnavegacion-productos" style="color: black;">Productos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-productos">
+    <section class="formulario-productos">
+
+      <h2>Filtrar por:</h2>
+      <hr>
+      <form action="" class="form-productos1">
+        <div>
+          <span>CATEGORIA</span>
+        </div>
+        <div>
+          <input type="radio" name="categoria" id="tablas">
+          <label for="tablas">Tablas</label>
+        </div>
+        <div>
+          <input type="radio" name="categoria" id="trajesdeneoprene">
+          <label for="trajesdeneoprene">Trajes de neoprene</label>
+        </div>
+        <div>
+          <input type="radio" name="categoria" id="equipamientodetabla">
+          <label for="equipamientodetabla">Equipamiento de tabla</label>
+        </div>
+        <div>
+          <input type="radio" name="categoria" id="toallasyponchos">
+          <label for="toallasyponchos">Toallas y Ponchos</label>
+        </div>
+      </form>
+      <hr>
+      <form action="" class="form-productos2">
+        <div>
+          <span>MARCA</span>
+        </div>
+        <div class="separacion-items">
+          <input type="radio" name="categoria" id="firewire">
+          <label for="firewire">Firewire</label>
+        </div>
+        <div>
+          <input type="radio" name="categoria" id="channelislands">
+          <label for="channelislands">Channelislands</label>
+        </div>
+        <div>
+          <input type="radio" name="categoria" id="lostdriver">
+          <label for="lostdriver">Lost Driver</label>
+        </div>
+        <div>
+          <input type="radio" name="categoria" id="quiksilver">
+          <label for="quiksilver">Quiksilver</label>
+        </div>
+        <div>
+          <input type="radio" name="categoria" id="roxy">
+          <label for="roxy">Roxy</label>
+        </div>
+        <hr style="margin-top: 20px; margin-bottom: 20px;">
+        <div style="margin-bottom: 20px;">
+          <label for="precio">Precio</label>
+          <select name="precioproducto" id="precio">
+            <option value="precio0">-</option>
+            <option value="precio">Entre 0$ y $5000</option>
+            <option value="precio2">Entre $5000 y $10000</option>
+            <option value="precio3">Entre $10000 y $20000</option>
+            <option value="precio4">$20000 en adelante</option>
+          </select>
+        </div>
+        <hr>
+        <div style="margin-top: 20px ;">
+          <label for="talle">Talle</label>
+          <select name="talle" id="talle">
+            <option value="0">-</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </div>
+      </form>
+      <hr>
+    </section>
+
+
+    <div class="productos-lista">
+      <form action="" class="form-ordenar">
+        <label for="orden" style="margin-right: 5px;">Ordenar por:</label>
+        <select name="orden" id="orden">
+          <option value="0">-</option>
+          <option value="relevantes">Relevantes</option>
+          <option value="mayorprecio">Mayor precio</option>
+          <option value="menorprecio">Menor precio</option>
+          <option value="oferta">En oferta</option>
+        </select>
+      </form>
+
+
+      <div class="grilla-productos-seccion">
+        <article class="tarjeta neoprene">
+
+          <img src="../img/trajedeneoprene.jpg" alt="trajedeneopreno" class="traje-de-neoprene">
+
+          <div class="tarjeta-body">
+
+            <h5 class="tarjeta-titulo">Traje de neoprene</h5>
+
+
+            <span class="tarjeta-precio"><span style="text-decoration: line-through"
+                class="tarjeta-precio">$15000</span> $7000</span>
+
+            <a href="./productos.html" class="btn">Ir a tienda</a>
+          </div>
+        </article>
+
+
+
+
+        <article class="tarjeta">
+
+          <img src="../img/tabla-blanca.png" alt="tabla-blanca" class="tablablanca">
+
+          <div class="tarjeta-body">
+
+            <h5 class="tarjeta-titulo">Tabla de Surf</h5>
+
+            <span class="tarjeta-precio"><span style="text-decoration: line-through;"
+                class="tarjeta-precio">$40000</span> $30000</span>
+
+
+            <a href="./productos.html" class="btn">Ir a tienda</a>
+          </div>
+        </article>
+
+
+
+        <article class="tarjeta">
+
+          <img src="../img/quillon.jpg" alt="quillon" class="quillon">
+
+          <div class="tarjeta-body">
+            <h5 class="tarjeta-titulo">Quillón</h5>
+
+            <span class="tarjeta-precio"><span style="text-decoration: line-through" class="tarjeta-precio">$7000</span>
+              $5000</span>
+
+            <a href="./productos.html" class="btn">Ir a tienda</a>
+
+          </div>
+        </article>
+
+
+
+        <article class="tarjeta">
+
+          <img src="../img/leash.jpg" alt="leash" class="leash">
+          <div class="tarjeta-body">
+
+            <h5 class="tarjeta-titulo">Leash</h5>
+
+            <span class="tarjeta-precio"><span style="text-decoration: line-through" class="tarjeta-precio">$5000</span>
+              $2500</span>
+
+            <a href="./productos.html" class="btn">Ir a tienda</a>
+
+          </div>
+        </article>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <a href="#subir"><img src="../img/flechitaparaarriba.png" class="iconoflecha" alt="iconoflecha"></a>
+
+  <footer class="footer">
+
+    <div class="grilla-iconos-footer">
+
+      <div class="div-1-footer"></div>
+      <figure class="iconosdefooter">
+        <img src="../img/iconofacebook.jpg" class="iconofacebook" alt="iconofacebook">
+        <img src="../img/iconoinstagram.jpg" class="iconoinstagram" alt="iconoinstagram">
+        <img src="../img/iconotwitter.jpg" class="iconotwitter" alt="iconotwitter">
+        <img src="../img/iconoyoutube.jpg" class="iconoyoutube" alt="iconoyoutube">
+        <img src="../img/iconotelefono.jpg" class="iconotelefono" alt="iconotelefono">
+      </figure>
+      <div class="div-2-footer"></div>
+
+    </div>
+
+    <div class="encerrarfooter">
+
+      <span class="footertituloprincipal">O'maii Surfing™</span>
+
+      <div class="derechosreservados">
+        <img src="../img/iconocopyright.jpg" class="iconocopyright" alt="iconocopyright">
+        <span>O'maii Surfing Todos los derechos reservados, 2022</span>
+      </div>
+
+    </div>
+
+    <form action="" class="formulario">
+
+      <label for="campo-de-mensaje">Escribinos un mensaje</label>
+
+      <div>
+        <label for="asunto">Asunto</label>
+        <select name="asunto" id="asunto">
+          <option value="mensaje">Mensaje</option>
+          <option value="reclamo">Reclamo</option>
+          <option value="recomendacion">Recomendación</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div>
+        <textarea name="campo-de-mensaje" id="campo-de-mensaje" cols="30" rows="10"></textarea>
+      </div>
+      <button style="width: 52px; height: 25px;">Enviar</button>
+    </form>
+
+    <div class="hypertextosfooter">
+      <a href="about:blank" target="_blank" class="hypertextosfooter">Empleos</a>
+      <a href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank" class="hypertextosfooter">Mapa del sitio</a>
+      <a href="about:blank" target="_blank" class="hypertextosfooter">Preguntas frecuentes</a>
+    </div>
+
+  </footer>
+</body>
+
+</html>
