@@ -639,7 +639,8 @@ footer {
 }
 
 .clases__celdas {
-  padding: 5px;
+  font-size: 1.5rem;
+  padding: 0.4em;
 }
 
 .clases__horario {
@@ -804,8 +805,9 @@ footer {
   gap: 40px;
   font-size: 1.2rem;
   background-color: rgba(255, 255, 255, 0.709);
-  padding: 30px;
+  padding: 1.6em;
   border-radius: 20px;
+  height: fit-content;
 }
 
 .productos__form-categoria {
