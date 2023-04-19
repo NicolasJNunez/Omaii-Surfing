@@ -13,18 +13,21 @@
 </head>
 
 <body>
-
+  
   <header class="header-secciones">
-
+    
     <h1 class="header-secciones__h1" id="h1">
       <a class="header-secciones__h1-href" href="../index.html">O'maii Surfing™</a>
     </h1>
-
+    
     <nav class="header-secciones__nav">
       <ul class="header-secciones__list-usuario">
-        <li class="header__item"><img class="header__icon" src="../img/icono-contacto.png" alt="icono-contacto"><a class="header-secciones__item-href" href="./contacto.html">Crear Cuenta</a>
+        <li class="header__item"><img class="header__icon" src="../img/icono-contacto.png" alt="icono-contacto"><a
+            class="header-secciones__item-href" href="./contacto.html">Crear Cuenta</a>
         </li>
-        <li class="header__item"><img class="header__icon" src="../img/location-icono.png" alt="icono-mapa"> <a class="header-secciones__item-href" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde estamos</a>
+        <li class="header__item"><img class="header__icon" src="../img/location-icono.png" alt="icono-mapa"> <a
+            class="header-secciones__item-href" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde
+            estamos</a>
         </li>
       </ul>
       <ul class="header-secciones__list-navegacion">
@@ -34,159 +37,191 @@
         </li>
       </ul>
     </nav>
-
-  </header>
-
-  <main class="mainreserva">
-
-      <section class="seccionentremedio">
-
-      <h3 style= "text-decoration: underline;">Alquiler</h3>
-
-      <table border="1" style="margin-bottom: 20px;">
-        <thead>
-          <tr>
-            <th style="padding: 5px;">Equipo</th>
-            <th style="padding: 5px;">Precio</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 5px;">Tabla</td>
-            <td style="padding: 5px;">$700</td>
-          </tr>
-          <tr>
-            <td style="padding: 5px;">Traje</td>
-            <td style="padding: 5px;">$500</td>
-          </tr>
-        </tbody>
-      </table>
-      <a href="./productos.html" style="color: rgb(33, 30, 169)">Comprar equipamiento</a>
     
-    </section>
-    <section class="seccionreserva1">
-      <h2 style= "text-decoration: underline;">Clases</h2>
-
-      <form action="" class="formularioreserva">
-        <div class="seleccionadia">
-          <label for="seleccionadia">Selecciona que día queres tener tu clase de surf</label>
-          <input type="date" id="seleccionadia" style="font-size: 1.3rem;">
-        </div>
-        <div class="formularioreserva2">
-          <label for="hora">Hora</label>
-          <select name="hora" id="hora" style="font-size: 1.5rem; padding: 3px;">
-            <option value="8am">08:00hs</option>
-            <option value="9am">09:00hs</option>
-            <option value="10am">10:00hs</option>
-            <option value="11am">11:00hs</option>
-            <option value="12am">12:00hs</option>
-            <option value="1pm">13:00hs</option>
-            <option value="2pm">14:00hs</option>
-            <option value="3pm">15:00hs</option>
-            <option value="4pm">16:00hs</option>
-          </select>
-        </div>
-        <div style="display: flex; gap: 20px;">
-          <span>¿Tenes tabla?</span>
-          <label for="si">Si</label>
-          <input type="radio" name="tenestabla" id="si" style="transform: scale(1.5);">
-          <label for="no">No</label>
-          <input type="radio" name="tenestabla" id="no" style="transform: scale(1.5);">
-        </div>
-        <div style="display: flex; gap: 20px;">
-          <span>¿Tenes traje?</span>
-          <label for="si2">Si</label>
-          <input type="radio" name="tenestraje" id="si2" style="transform: scale(1.5);">
-          <label for="no2">No</label>
-          <input type="radio" name="tenestraje" id="no2" style="transform: scale(1.5);">
-        </div>
-        <div>
-          <input type="submit" value="Reservar clase" style="font-size: 1.3rem; padding: 7px;">
-        </div>
-      </form>
-    </section>
-
-    <section class="seccion2reserva">
-      <h3 style= "text-decoration: underline;">Precios</h3>
-      <table border="1">
-        <thead>
-          <tr>
-            <th style="padding: 5px;">Sesiones de Coaching</th>
-            <th style="padding: 5px;">Costos</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 5px;">1</td>
-            <td style="padding: 5px;">$3000</td>
-          </tr>
-        </tbody>
-      </table>
-      <h3 style= "text-decoration: underline;">Por mes</h3>
-      <table border="1">
-        <thead>
-          <tr>
-            <th style="padding: 5px;">Sesiones de Coaching</th>
-            <th style="padding: 5px;">Costos</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 5px;">2</td>
-            <td style="padding: 5px;">$5500</td>
-          </tr>
-          <tr>
-            <td style="padding: 5px;">3</td>
-            <td style="padding: 5px;">$8000</td>
-          </tr>
-          <tr>
-            <td style="padding: 5px;">4</td>
-            <td style="padding: 5px;">$9500</td>
-          </tr>
-          <tr>
-            <td style="padding: 5px;">5</td>
-            <td style="padding: 5px;">$12000</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+  </header>
   
-
+  <main>
+    
+    <section class="clases">
+      
+      <h2 class="clases__h2">Reservá tus Clases:</h2>
+      
+      <div class="clases__cont-art">
+        
+        <article class="clases__tabla-alquiler">
+          
+          <h3>Alquiler</h3>
+          
+          <table border="1">
+            <thead>
+              <tr>
+                <th class="clases__celdas">Equipo</th>
+                <th class="clases__celdas">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="clases__celdas">Tabla</td>
+                <td class="clases__celdas">$700</td>
+              </tr>
+              <tr>
+                <td class="clases__celdas">Traje</td>
+                <td class="clases__celdas">$500</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <a class="btn" href="./productos.html">Comprar equipamiento</a>
+          
+        </article>
+        
+        <article class="clases__horario">
+          
+          <h3>Seleciona el horario</h3>
+          
+          <form action="" class="clases__form">
+            
+            <div class="clases__dia">
+              <label for="seleccion-dia">Día</label>
+              <input type="date" id="seleccion-dia" class="clases__input">
+            </div>
+            
+            <div class="clases__hora">
+              
+              <label for="hora">Hora</label>
+              <select name="hora" id="hora" class="clases__input">
+                <option value="8am">08:00hs</option>
+                <option value="9am">09:00hs</option>
+                <option value="10am">10:00hs</option>
+                <option value="11am">11:00hs</option>
+                <option value="12am">12:00hs</option>
+                <option value="1pm">13:00hs</option>
+                <option value="2pm">14:00hs</option>
+                <option value="3pm">15:00hs</option>
+                <option value="4pm">16:00hs</option>
+              </select>
+              
+            </div>
+            
+            <div class="clases__rad">
+              
+              <span>¿Tenes tabla?</span>
+              
+              <label for="si-tengo-tabla">Si</label>
+              <input class="clases__rad-btn" type="radio" name="tenestabla" id="si-tengp-tabla">
+              <label for="no-tengo-tabla">No</label>
+              <input class="clases__rad-btn" type="radio" name="tenestabla" id="no-tengo-tabla">
+              
+            </div>
+            
+            <div class="clases__rad">
+              
+              <span>¿Tenes traje?</span>
+              
+              <label for="si-tengo-traje">Si</label>
+              <input class="clases__rad-btn" type="radio" name="tenestraje" id="si-tengo-traje">
+              <label for="no-tengo-traje">No</label>
+              <input class="clases__rad-btn" type="radio" name="tenestraje" id="no-tengo-traje">
+              
+            </div>
+            
+            <div>
+              <input class="clases__input" type="submit" value="Reservar clase">
+            </div>
+            
+          </form>
+          
+        </article>
+        
+        <article class="clases__precios">
+          
+          <h3>Precios</h3>
+          
+          <table border="1">
+            <thead>
+              <tr>
+                <th class="clases__celdas">Sesiones de Coaching</th>
+                <th class="clases__celdas">Costos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="clases__celdas">1</td>
+                <td class="clases__celdas">$3000</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <h3>Por mes</h3>
+          
+          <table border="1">
+            <thead>
+              <tr>
+                <th class="clases__celdas">Sesiones de Coaching</th>
+                <th class="clases__celdas">Costos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="clases__celdas">2</td>
+                <td class="clases__celdas">$5500</td>
+              </tr>
+              <tr>
+                <td class="clases__celdas">3</td>
+                <td class="clases__celdas">$8000</td>
+              </tr>
+              <tr>
+                <td class="clases__celdas">4</td>
+                <td class="clases__celdas">$9500</td>
+              </tr>
+              <tr>
+                <td class="clases__celdas">5</td>
+                <td class="clases__celdas">$12000</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </article>
+        
+      </div>
+      
+    </section>
     
   </main>
-  <a href="#h1"><img src="../img/flechitaparaarriba.png" class="iconoflecha" alt="iconoflecha"></a>
-
-  <footer class="footer">
-
-    <div class="grilla-iconos-footer">
-
-      <div class="div-1-footer"></div>
-      <figure class="iconosdefooter">
-        <img src="../img/iconofacebook.jpg" class="iconofacebook" alt="iconofacebook">
-        <img src="../img/iconoinstagram.jpg" class="iconoinstagram" alt="iconoinstagram">
-        <img src="../img/iconotwitter.jpg" class="iconotwitter" alt="iconotwitter">
-        <img src="../img/iconoyoutube.jpg" class="iconoyoutube" alt="iconoyoutube">
-        <img src="../img/iconotelefono.jpg" class="iconotelefono" alt="iconotelefono">
+  
+  <footer>
+    
+    <div class="footer__grilla-iconos">
+      
+      <div class="footer__linea-izq"></div>
+      
+      <figure class="footer__iconos">
+        <img src="../img/iconofacebook.jpg" class="footer__icono-facebook" alt="iconofacebook">
+        <img src="../img/iconoinstagram.jpg" class="footer__icono-instagram" alt="iconoinstagram">
+        <img src="../img/iconotwitter.jpg" class="footer__icono-twitter" alt="iconotwitter">
+        <img src="../img/iconoyoutube.jpg" class="footer__icono-youtube" alt="iconoyoutube">
+        <img src="../img/iconotelefono.jpg" class="footer__icono-telefono" alt="iconotelefono">
       </figure>
-      <div class="div-2-footer"></div>
-
+      
+      <div class="footer__linea-der"></div>
+      
     </div>
-
-    <div class="encerrarfooter">
-
-      <span class="footertituloprincipal">O'maii Surfing™</span>
-
-      <div class="derechosreservados">
-        <img src="../img/iconocopyright.jpg" class="iconocopyright" alt="iconocopyright">
+    
+    <div class="footer__cont-logo-cpy">
+      
+      <span class="footer__logo">O'maii Surfing™</span>
+      
+      <div class="footer__cpy">
+        <img src="../img/iconocopyright.jpg" class="footer__icono-cpy" alt="icono-copyright">
         <span>O'maii Surfing Todos los derechos reservados, 2022</span>
       </div>
-
+      
     </div>
-
-    <form action="" class="formulario">
-
+    
+    <form action="" class="footer__form">
+      
       <label for="campo-de-mensaje">Escribinos un mensaje</label>
-
+      
       <div>
         <label for="asunto">Asunto</label>
         <select name="asunto" id="asunto">
@@ -196,18 +231,20 @@
           <option value="otro">Otro</option>
         </select>
       </div>
+      
       <div>
         <textarea name="campo-de-mensaje" id="campo-de-mensaje" cols="30" rows="10"></textarea>
       </div>
-      <button style="width: 52px; height: 25px;">Enviar</button>
+      
+      <button class="footer__btn">Enviar</button>
     </form>
-
-    <div class="hypertextosfooter">
-      <a href="about:blank" target="_blank" class="hypertextosfooter">Empleos</a>
-      <a href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank" class="hypertextosfooter">Mapa del sitio</a>
-      <a href="about:blank" target="_blank" class="hypertextosfooter">Preguntas frecuentes</a>
+    
+    <div class="footer__cont-href">
+      <a class="footer__href" href="about:blank" target="_blank">Empleos</a>
+      <a class="footer__href" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Mapa del sitio</a>
+      <a class="footer__href" href="about:blank" target="_blank">Preguntas frecuentes</a>
     </div>
-
+    
   </footer>
 </body>
 

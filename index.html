@@ -19,22 +19,22 @@
 </head>
 
 <body>
-
+  
     <header class="portada">
-
+      
       <nav class="portada__nav">
-
+        
         <div>
           <h1>
             <a class="portada__h1" href="./index.html" id="logo">O'maii Surfing™</a>
           </h1>
         </div>
-
+        
         <div class="portada__lists">
           <ul class="portada__list-usuario">
-
+            
             <!-- ⇩ La clase header__item y header__icon se repite en todas las paginas, es por eso que no tiene como nombre de elemento "portada" -->
-
+            
             <li class="header__item"><img class="header__icon" src="./img/icono-contacto-blanco.png" alt="icono-contacto"><a class="portada__item-href-usuario" href="./pages/contacto.html">Crear Cuenta</a>
             </li>
             <li class="header__item"><img class="header__icon" src="./img/location-icono-blanco.png" alt="icono-mapa"><a class="portada__item-href-usuario" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde estamos</a>
@@ -47,38 +47,38 @@
             </li>
           </ul>
         </div>
-
+        
       </nav>
-
-
+      
+      
     <div class="portada__texto">
-
+      
       <!-- ⇩ Este h3 es adrede ya que es menos relevante que el h2 que lo acompaña debajo -->
-
+      
       <h3 class="portada__h3">OMAII - CLASES DE SURF, TRABAJO Y SURF, PLAYA Y SURF</h3>
-
+      
       <h2 class="portada__h2-desktop"><strong class="portada__strong-desktop">Buenos momentos</strong> & experiencias inolvidables
       </h2>
-
+      
       <!-- ⇧ visible en resoluciones altas -->
       <!-- ⇩ visible en resoluciones bajas -->
-
+      
       <h2 class="portada__h2-mobile-1">Buenos momentos</h2>
       <h2 class="portada__h2-mobile-2">&</h2>
       <h2 class="portada__h2-mobile-3">experiencias inolvidables</h2>
-
+      
     </div>
-
+    
     <figure>
       <video class="portada__video" autoplay muted loop plays-inline src="./videos/videosurf.mp4"></video>
     </figure>
-
+    
   </header>
-
+  
   <main>
-
+    
     <section class="about-us">
-
+      
       <h2 class="about-us__h2">¿Quienes <strong class="about-us__strong">somos?</strong></h2>
       <p class="about-us__parrafo">
         O'maii Surfing nació hace 15 años para dar respuesta a la pasión de muchos niños, jóvenes y padres por el surf.
@@ -88,165 +88,183 @@
         vive la experiencia O'maii!
       </p>
     </section>
-
-
+    
+    
     <section>
-
+      
       <div class="productos-index__texto">
         <h4 class="productos-index__h4-wide">QUEREMOS QUE NUESTROS CLIENTES TENGAN ACCESO A UNA TIENDA CON EQUIPAMIENTOS DE EXCELENTE
           CALIDAD</h4>
         <h3 class="productos-index__h3-wide">¡Oferta! - Nuestros <strong class="productos-index__strong-wide">mejores</strong> productos del 2023</h3>
-
+          
           <!-- ⇧ visible en resoluciones altas -->
-
+          
           <!-- ⇩ visible en resoluciones bajas -->
-
+          
         <h4 class="productos-index__h4-narrow">LOS MEJORES EQUIPAMIENTOS EN UNA SOLA TIENDA</h4>
         <h3 class="productos-index__h3-narrow">¡Oferta!</h3>
         <h3 class="productos-index__h3-narrow">Lo <strong class="productos-index__strong-narrow">mejor</strong> del 2023</h3>
       </div>
-
-
+      
+      
       <div class="grilla-productos">
-
-        <div class="celda-neopreno">
+        
+        <div class="grilla-productos__celda-neopreno">
+          
           <article class="tarjeta">
-
-            <img src="./img/trajedeneoprene.jpg" alt="trajedeneopreno" class="traje-de-neoprene">
-
-            <div class="tarjeta-body">
-
-              <h5 class="tarjeta-titulo">Traje de neoprene</h5>
-
-
-              <span class="tarjeta-precio"><span style="text-decoration: line-through"
-                  class="tarjeta-precio">$15000</span> $7000</span>
-
+            
+            <img src="./img/trajedeneoprene.jpg" alt="trajedeneopreno" class="tarjeta__img-neoprene">
+            
+            <div class="tarjeta__body">
+              
+              <h5 class="tarjeta__titulo">Traje de neoprene</h5>
+              
+              <span><span class="tarjeta__span--linethrough">$15000</span> $7000</span>
+              
               <a href="./pages/productos.html" target="_blank" class="btn">Ir a tienda</a>
             </div>
+            
           </article>
+          
         </div>
-
-
-        <div class="celda-tabla">
+        
+        
+        <div class="grilla-productos__celda-tabla">
+          
           <article class="tarjeta">
-
-            <img src="./img/tabla-blanca.png" alt="tabla-blanca" class="tablablanca">
-
-            <div class="tarjeta-body">
-
-              <h5 class="tarjeta-titulo">Tabla de Surf</h5>
-
-              <span class="tarjeta-precio"><span style="text-decoration: line-through;"
-                  class="tarjeta-precio">$40000</span> $30000</span>
-
-
+            
+            <img src="./img/tabla-blanca.png" alt="tabla-blanca" class="tarjeta__img-tablablanca">
+            
+            <div class="tarjeta__body">
+              
+              <h5 class="tarjeta__titulo">Tabla de Surf</h5>
+              
+              <span><span class="tarjeta__span--linethrough">$40000</span> $30000</span>
+              
               <a href="./pages/productos.html" target="_blank" class="btn">Ir a tienda</a>
             </div>
+            
           </article>
+          
         </div>
-
-        <div class="celda-quillon">
+        
+        <div class="grilla-productos__celda-quillon">
+          
           <article class="tarjeta">
-
-            <img src="./img/quillon.jpg" alt="quillon" class="quillon">
-
-            <div class="tarjeta-body">
-              <h5 class="tarjeta-titulo">Quillón</h5>
-
-              <span class="tarjeta-precio"><span style="text-decoration: line-through"
-                  class="tarjeta-precio">$7000</span> $5000</span>
-
+            
+            <img src="./img/quillon.jpg" alt="quillon" class="tarjeta__img-quillon">
+            
+            <div class="tarjeta__body">
+              
+              <h5 class="tarjeta__titulo">Quillón</h5>
+              
+              <span><span class="tarjeta__span--linethrough">$7000</span> $5000</span>
+              
               <a href="./pages/productos.html" target="_blank" class="btn">Ir a tienda</a>
-
+              
             </div>
+            
           </article>
+          
         </div>
-
-        <div class="celda-leash">
+        
+        <div class="grilla-productos__celda-leash">
+          
           <article class="tarjeta">
-
-            <img src="./img/leash.jpg" alt="leash" class="leash">
-            <div class="tarjeta-body">
-
-              <h5 class="tarjeta-titulo">Leash</h5>
-
-              <span class="tarjeta-precio"><span style="text-decoration: line-through"
-                  class="tarjeta-precio">$5000</span> $2500</span>
-
+            
+            <img src="./img/leash.jpg" alt="leash" class="tarjeta__img-leash">
+            
+            <div class="tarjeta__body">
+              
+              <h5 class="tarjeta__titulo">Leash</h5>
+              
+              <span><span class="tarjeta__span--linethrough">$5000</span> $2500</span>
+              
               <a href="./pages/productos.html" target="_blank" class="btn">Ir a tienda</a>
-
+              
             </div>
+            
           </article>
+          
         </div>
+        
       </div>
-
+      
     </section>
-
-    <section class="reserva-tu-clase">
-      <div class="textoreserva">
-        <h4 class="titulo-reserva-tu-clase">¡Reservá tu Clase!</h4>
-        <p class="parraforeserva">
+    
+    <section class="reserva">
+      
+      <div class="reserva__texto">
+        
+        <h4 class="reserva__titulo">¡Reservá tu Clase!</h4>
+        
+        <p class="reserva__parrafo">
           Podes reservar tus clases de manera online. Lo único que necesitás
           hacer es crear tu cuenta en nuestra página y luego completar los datos
           en la sección de reservas. De esta forma procederemos a enviarte un
           mail, para darte toda la info.
         </p>
+        
         <div>
-          <a href="./pages/contacto.html" class="botones-reservar" target="_blank">REGISTRARSE</a>
-          <a href="./pages/clases.html" class="botones-reservar">RESERVAR</a>
+          <a href="./pages/contacto.html" class="reserva__btn" target="_blank">REGISTRARSE</a>
+          <a href="./pages/clases.html" class="reserva__btn">RESERVAR</a>
         </div>
+        
       </div>
-      <div class="container-video">
+      
+      <div class="reserva__cont-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/hxI8e4OxLX8" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen class="videodeyoutube"></iframe>
+          allowfullscreen></iframe>
       </div>
+      
     </section>
-
-
-
+    
+    
     <!-- Este span es para el enlace que permite (desde abajo) transportarnos al header con un click -->
     <span id="subir" class="subir"></span>
-
+    
     <!-- Este hypertext es para el icono que es una flecha y nos transporta al header -->
-    <a href="#subir"><img src="./img/flechitaparaarriba.png" class="iconoflecha" alt="iconoflecha"></a>
-
+    <a href="#subir"><img src="./img/flechitaparaarriba.png" class="icono-flecha" alt="icono-flecha"></a>
+    
+    
   </main>
-
-
-  <footer class="footer">
-
-    <div class="grilla-iconos-footer">
-
-      <div class="div-1-footer"></div>
-      <figure class="iconosdefooter">
-        <img src="./img/iconofacebook.jpg" class="iconofacebook" alt="iconofacebook">
-        <img src="./img/iconoinstagram.jpg" class="iconoinstagram" alt="iconoinstagram">
-        <img src="./img/iconotwitter.jpg" class="iconotwitter" alt="iconotwitter">
-        <img src="./img/iconoyoutube.jpg" class="iconoyoutube" alt="iconoyoutube">
-        <img src="./img/iconotelefono.jpg" class="iconotelefono" alt="iconotelefono">
+  
+  
+  <footer>
+    
+    <div class="footer__grilla-iconos">
+      
+      <div class="footer__linea-izq"></div>
+      
+      <figure class="footer__iconos">
+        <img src="./img/iconofacebook.jpg" class="footer__icono-facebook" alt="iconofacebook">
+        <img src="./img/iconoinstagram.jpg" class="footer__icono-instagram" alt="iconoinstagram">
+        <img src="./img/iconotwitter.jpg" class="footer__icono-twitter" alt="iconotwitter">
+        <img src="./img/iconoyoutube.jpg" class="footer__icono-youtube" alt="iconoyoutube">
+        <img src="./img/iconotelefono.jpg" class="footer__icono-telefono" alt="iconotelefono">
       </figure>
-      <div class="div-2-footer"></div>
-
+      
+      <div class="footer__linea-der"></div>
+      
     </div>
-
-    <div class="encerrarfooter">
-
-      <span class="footertituloprincipal">O'maii Surfing™</span>
-
-      <div class="derechosreservados">
-        <img src="./img/iconocopyright.jpg" class="iconocopyright" alt="iconocopyright">
+    
+    <div class="footer__cont-logo-cpy">
+      
+      <span class="footer__logo">O'maii Surfing™</span>
+      
+      <div class="footer__cpy">
+        <img src="./img/iconocopyright.jpg" class="footer__icono-cpy" alt="icono-copyright">
         <span>O'maii Surfing Todos los derechos reservados, 2022</span>
       </div>
-
+      
     </div>
-
-    <form action="" class="formulario">
-
+    
+    <form action="" class="footer__form">
+      
       <label for="campo-de-mensaje">Escribinos un mensaje</label>
-
+      
       <div>
         <label for="asunto">Asunto</label>
         <select name="asunto" id="asunto">
@@ -256,19 +274,22 @@
           <option value="otro">Otro</option>
         </select>
       </div>
+      
       <div>
         <textarea name="campo-de-mensaje" id="campo-de-mensaje" cols="30" rows="10"></textarea>
       </div>
-      <button style="width: 52px; height: 25px;">Enviar</button>
+      
+      <button class="footer__btn">Enviar</button>
     </form>
-
-    <div class="hypertextosfooter">
-      <a href="about:blank" target="_blank" class="hypertextosfooter">Empleos</a>
-      <a href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank" class="hypertextosfooter">Mapa del sitio</a>
-      <a href="about:blank" target="_blank" class="hypertextosfooter">Preguntas frecuentes</a>
+    
+    <div class="footer__cont-href">
+      <a class="footer__href" href="about:blank" target="_blank">Empleos</a>
+      <a class="footer__href" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Mapa del sitio</a>
+      <a class="footer__href" href="about:blank" target="_blank">Preguntas frecuentes</a>
     </div>
-
+    
   </footer>
+  
 </body>
 
 </html>
