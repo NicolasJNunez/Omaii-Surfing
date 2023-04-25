@@ -7,13 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Overlock:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Caveat:wght@700&family=Merriweather+Sans:wght@300&family=Open+Sans:wght@300&family=Overlock:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="./img/omaii-icono.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
   <title>O'maii Surfing</title>
 </head>
@@ -26,7 +22,7 @@
         
         <div>
           <h1>
-            <a class="portada__h1" href="./index.html" id="logo">O'maii Surfing™</a>
+            <a class="portada__link" href="./index.html" id="logo">O'maii Surfing™</a>
           </h1>
         </div>
         
@@ -36,16 +32,16 @@
             
             <!-- ⇩ La clase header__item y header__icon se repite en todas las paginas, es por eso que no tiene como nombre de bloque "portada" -->
             
-            <li class="header__item"><img class="header__icon" src="./img/icono-contacto-blanco.png" alt="icono-contacto"><a class="portada__item-href-usuario" href="./pages/contacto.html">Crear Cuenta</a>
+            <li class="header__item"><img class="header__icon" src="./img/icono-contacto-blanco.png" alt="icono contacto"><a class="portada__link-usuario" href="./pages/contacto.html">Crear Cuenta</a>
             </li>
-            <li class="header__item"><img class="header__icon" src="./img/location-icono-blanco.png" alt="icono-mapa"><a class="portada__item-href-usuario" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde estamos</a>
+            <li class="header__item"><img class="header__icon" src="./img/location-icono-blanco.png" alt="icono mapa"><a class="portada__link-usuario" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde estamos</a>
             </li>
           </ul>
           
           <ul class="portada__list-navegacion">
-            <li><a class="portada__item-href-navegacion" href="./pages/surf.html">Surf</a></li>
-            <li><a class="portada__item-href-navegacion" href="./pages/clases.html">Clases</a></li>
-            <li><a class="portada__item-href-navegacion" href="./pages/productos.html">Productos</a>
+            <li><a class="portada__link-navegacion" href="./pages/surf.html">Surf</a></li>
+            <li><a class="portada__link-navegacion" href="./pages/clases.html">Clases</a></li>
+            <li><a class="portada__link-navegacion" href="./pages/productos.html">Productos</a>
             </li>
           </ul>
           
@@ -58,17 +54,17 @@
       
       <!-- ⇩ Este h3 es adrede ya que es menos relevante que el h2 que lo acompaña debajo -->
       
-      <h3 class="portada__h3">OMAII - CLASES DE SURF, TRABAJO Y SURF, PLAYA Y SURF</h3>
+      <h3 class="portada__slogan">OMAII - CLASES DE SURF, TRABAJO Y SURF, PLAYA Y SURF</h3>
       
-      <h2 class="portada__h2-desktop"><strong class="portada__strong-desktop">Buenos momentos</strong> & experiencias inolvidables
+      <h2 class="portada__slogan-desktop"><strong class="portada__strong-desktop">Buenos momentos</strong> & experiencias inolvidables
       </h2>
       
       <!-- ⇧ visible en resoluciones altas -->
       <!-- ⇩ visible en resoluciones bajas -->
       
-      <h2 class="portada__h2-mobile-1">Buenos momentos</h2>
-      <h2 class="portada__h2-mobile-2">&</h2>
-      <h2 class="portada__h2-mobile-3">experiencias inolvidables</h2>
+      <h2 class="portada__slogan-mobile-1">Buenos momentos</h2>
+      <h2 class="portada__slogan-mobile-2">&</h2>
+      <h2 class="portada__slogan-mobile-3">experiencias inolvidables</h2>
       
     </div>
     
@@ -80,9 +76,9 @@
   
   <main>
     
-    <section class="about-us">
+    <section data-aos="fade-right" data-aos-duration="1500" class="about-us">
       
-      <h2 class="about-us__h2">¿Quienes <strong class="about-us__strong">somos?</strong></h2>
+      <h2 class="about-us__titulo">¿Quienes <strong class="about-us__strong">somos?</strong></h2>
       
       <p class="about-us__parrafo">
         O'maii Surfing nació hace 15 años para dar respuesta a la pasión de muchos niños, jóvenes y padres por el surf.
@@ -96,9 +92,9 @@
     
     <section>
       
-      <div class="productos-index__texto">
-        <h4 class="productos-index__h4-wide">QUEREMOS QUE NUESTROS CLIENTES TENGAN ACCESO A UNA TIENDA CON EQUIPAMIENTOS DE EXCELENTE
-          CALIDAD</h4>
+      <div data-aos="fade-down" data-aos-duration="1500" class="productos-index__texto">
+        <h2 class="productos-index__h4-wide">QUEREMOS QUE NUESTROS CLIENTES TENGAN ACCESO A UNA TIENDA CON EQUIPAMIENTOS DE EXCELENTE
+          CALIDAD</h2>
         <h3 class="productos-index__h3-wide">¡Oferta! - Nuestros <strong class="productos-index__strong-wide">mejores</strong> productos del 2023</h3>
           
           <!-- ⇧ visible en resoluciones altas -->
@@ -113,15 +109,15 @@
       
       <div class="grilla-productos">
         
-        <div class="grilla-productos__celda-neopreno">
+        <div data-aos="flip-left" data-aos-duration="1500" class="grilla-productos__celda-neopreno">
           
           <article class="tarjeta">
             
-            <img src="./img/trajedeneoprene.jpg" alt="trajedeneopreno" class="tarjeta__img-neoprene">
+            <img src="./img/trajedeneoprene.jpg" alt="traje de neopreno" class="tarjeta__img-neoprene">
             
             <div class="tarjeta__body">
               
-              <h5 class="tarjeta__titulo">Traje de neoprene</h5>
+              <h3 class="tarjeta__titulo">Traje de neoprene</h3>
               
               <span><span class="tarjeta__span--linethrough">$15000</span> $7000</span>
               
@@ -133,15 +129,15 @@
         </div>
         
         
-        <div class="grilla-productos__celda-tabla">
+        <div data-aos="flip-right" data-aos-duration="1500" class="grilla-productos__celda-tabla">
           
           <article class="tarjeta">
             
-            <img src="./img/tabla-blanca.png" alt="tabla-blanca" class="tarjeta__img-tablablanca">
+            <img src="./img/tabla-blanca.png" alt="tabla blanca" class="tarjeta__img-tablablanca">
             
             <div class="tarjeta__body">
               
-              <h5 class="tarjeta__titulo">Tabla de Surf</h5>
+              <h3 class="tarjeta__titulo">Tabla de Surf</h3>
               
               <span><span class="tarjeta__span--linethrough">$40000</span> $30000</span>
               
@@ -152,7 +148,7 @@
           
         </div>
         
-        <div class="grilla-productos__celda-quillon">
+        <div data-aos="flip-left" data-aos-duration="1500" class="grilla-productos__celda-quillon">
           
           <article class="tarjeta">
             
@@ -160,7 +156,7 @@
             
             <div class="tarjeta__body">
               
-              <h5 class="tarjeta__titulo">Quillón</h5>
+              <h3 class="tarjeta__titulo">Quillón</h3>
               
               <span><span class="tarjeta__span--linethrough">$7000</span> $5000</span>
               
@@ -172,7 +168,7 @@
           
         </div>
         
-        <div class="grilla-productos__celda-leash">
+        <div data-aos="flip-right" data-aos-duration="1500" class="grilla-productos__celda-leash">
           
           <article class="tarjeta">
             
@@ -180,7 +176,7 @@
             
             <div class="tarjeta__body">
               
-              <h5 class="tarjeta__titulo">Leash</h5>
+              <h3 class="tarjeta__titulo">Leash</h3>
               
               <span><span class="tarjeta__span--linethrough">$5000</span> $2500</span>
               
@@ -198,9 +194,9 @@
     
     <section class="reserva">
       
-      <div class="reserva__texto">
+      <div data-aos="fade-up" data-aos-duration="1500" class="reserva__texto">
         
-        <h4 class="reserva__titulo">¡Reservá tu Clase!</h4>
+        <h2 class="reserva__titulo">¡Reservá tu Clase!</h2>
         
         <p class="reserva__parrafo">
           Podes reservar tus clases de manera online. Lo único que necesitás
@@ -216,7 +212,7 @@
         
       </div>
       
-      <div class="reserva__cont-video">
+      <div data-aos="fade-zoom-in" class="reserva__cont-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/hxI8e4OxLX8" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -230,7 +226,7 @@
     <span id="subir" class="subir"></span>
     
     <!-- Este hypertext es para el icono que es una flecha y nos transporta al header -->
-    <a href="#subir"><img src="./img/flechitaparaarriba.png" class="icono-flecha" alt="icono-flecha"></a>
+    <a href="#subir"><img src="./img/flechitaparaarriba.png" class="icono-flecha" alt="icono flecha"></a>
     
     
   </main>
@@ -242,13 +238,13 @@
       
       <div class="footer__linea-izq"></div>
       
-      <figure class="footer__iconos">
-        <img src="./img/iconofacebook.jpg" class="footer__icono-facebook" alt="iconofacebook">
-        <img src="./img/iconoinstagram.jpg" class="footer__icono-instagram" alt="iconoinstagram">
-        <img src="./img/iconotwitter.jpg" class="footer__icono-twitter" alt="iconotwitter">
-        <img src="./img/iconoyoutube.jpg" class="footer__icono-youtube" alt="iconoyoutube">
-        <img src="./img/iconotelefono.jpg" class="footer__icono-telefono" alt="iconotelefono">
-      </figure>
+      <div class="footer__iconos">
+        <img src="./img/iconofacebook.jpg" class="footer__icono-facebook" alt="icono facebook">
+        <img src="./img/iconoinstagram.jpg" class="footer__icono-instagram" alt="icono instagram">
+        <img src="./img/iconotwitter.jpg" class="footer__icono-twitter" alt="icono twitter">
+        <img src="./img/iconoyoutube.jpg" class="footer__icono-youtube" alt="icono youtube">
+        <img src="./img/iconotelefono.jpg" class="footer__icono-telefono" alt="icono telefono">
+      </div>
       
       <div class="footer__linea-der"></div>
       
@@ -259,13 +255,13 @@
       <span class="footer__logo">O'maii Surfing™</span>
       
       <div class="footer__cpy">
-        <img src="./img/iconocopyright.jpg" class="footer__icono-cpy" alt="icono-copyright">
+        <img src="./img/iconocopyright.jpg" class="footer__icono-cpy" alt="icono copyright">
         <span>O'maii Surfing Todos los derechos reservados, 2022</span>
       </div>
       
     </div>
     
-    <form action="" class="footer__form">
+    <form action="" class="form">
       
       <label for="campo-de-mensaje">Escribinos un mensaje</label>
       
@@ -283,7 +279,7 @@
         <textarea name="campo-de-mensaje" id="campo-de-mensaje" cols="30" rows="10"></textarea>
       </div>
       
-      <button class="footer__btn">Enviar</button>
+      <button class="form__btn">Enviar</button>
     </form>
     
     <div class="footer__cont-href">
@@ -294,6 +290,10 @@
     
   </footer>
   
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -59,7 +59,7 @@ button {
   justify-content: space-around;
 }
 
-.portada__h1 {
+.portada__link {
   color: rgb(255, 255, 255);
   font-size: 4rem;
   font-weight: 900;
@@ -68,7 +68,7 @@ button {
   text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.575);
 }
 
-.portada__h1:hover{
+.portada__link:hover{
   font-size: 4.3rem;
   -webkit-text-stroke: 2px rgb(255, 255, 255) ;
   color: transparent;
@@ -100,23 +100,23 @@ button {
 
 }
 
-.portada__item-href-navegacion {
+.portada__link-navegacion {
   font-weight: bold;
   font-size: 1.4rem;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.575);
   transition: 0.7s ease;
 }
 
-.portada__item-href-navegacion:hover {
+.portada__link-navegacion:hover {
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
 }
 
-.portada__item-href-usuario {
+.portada__link-usuario {
   transition: 0.7s ease;
 }
 
-.portada__item-href-usuario:hover {
+.portada__link-usuario:hover {
   color: rgb(255, 255, 255);
   font-size: 1.17rem;
 }
@@ -130,7 +130,7 @@ button {
   text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
-.portada__h3 {
+.portada__slogan {
   font-weight: lighter;
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.774);
@@ -138,7 +138,7 @@ button {
   text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
-.portada__h2-desktop {
+.portada__slogan-desktop {
   font-size: 2.5rem;
   font-weight: lighter;
   color: white;
@@ -152,20 +152,20 @@ button {
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
 }
 
-.portada__h2-mobile-1 {
+.portada__slogan-mobile-1 {
   display: none;
   font-family: 'Overlock', cursive;
   font-weight: bold;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
 }
 
-.portada__h2-mobile-2 {
+.portada__slogan-mobile-2 {
   display: none;
   font-family: 'Overlock', cursive;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
 }
 
-.portada__h2-mobile-3 {
+.portada__slogan-mobile-3 {
   display: none;
   font-family: 'Overlock', cursive;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
@@ -196,7 +196,7 @@ button {
   font-family: 'Baloo Tamma 2', cursive;
 }
 
-.about-us__h2 {
+.about-us__titulo {
   font-size: 3rem;
   color: #254642;
 }
@@ -533,7 +533,7 @@ footer {
   margin-top: -4px;
 }
 
-.footer__form {
+.form {
   margin-top: 20px;
   display: flex;
   flex-flow: column;
@@ -542,7 +542,7 @@ footer {
   gap: 6px;
 }
 
-.footer__btn {
+.form__btn {
   width: 52px; 
   height: 25px;
 }
@@ -779,6 +779,7 @@ footer {
 .surf__cont-art {
   display: flex;
   gap: 20px;
+  margin-bottom: 50px;
 }
 
 .surf__hr {
@@ -863,7 +864,7 @@ margin-right: 5px;
 
 @media (max-width:1350px) {
 
-  .about-us__h2 {
+  .about-us__titulo {
     font-size: 2.5rem;
   }
 
@@ -912,13 +913,13 @@ margin-right: 5px;
     align-items: center;
   }
 
-  .portada__h3 {
+  .portada__slogan {
     font-weight: lighter;
     font-size: 0.9rem;
     color: white;
   }
 
-  .portada__h2-desktop {
+  .portada__slogan-desktop {
     font-size: 2rem;
     font-weight: lighter;
     color: white;
@@ -929,7 +930,7 @@ margin-right: 5px;
     font-weight: bold;
   }
 
-  .about-us__h2 {
+  .about-us__titulo {
     font-size: 2.2rem;
   }
 
@@ -998,7 +999,7 @@ justify-content: center;
     align-items: center;
   }
 
-  .portada__h2-desktop {
+  .portada__slogan-desktop {
     font-size: 1.5rem;
     font-weight: lighter;
     color: white;
@@ -1022,7 +1023,7 @@ justify-content: center;
     padding: 6em;
 }
 
-  .about-us__h2 {
+  .about-us__titulo {
     font-size: 2rem;
   }
 
@@ -1109,26 +1110,26 @@ justify-content: center;
     width: 40px;
   }
 
-  .portada__h2-desktop {
+  .portada__slogan-desktop {
     display: none;
   }
 
-  .portada__h3 {
+  .portada__slogan {
     display: none;
   }
 
-  .portada__h2-mobile-1 {
+  .portada__slogan-mobile-1 {
     display: block;
     font-size: 2.25rem;
     color: white;
   }
   
-  .portada__h2-mobile-2 {
+  .portada__slogan-mobile-2 {
     display: block;
     color: white;
   }
   
-  .portada__h2-mobile-3 {
+  .portada__slogan-mobile-3 {
     display: block;
     color: white;
   }
@@ -1150,7 +1151,7 @@ justify-content: center;
 }
 
 @media (max-width:500px) {
-  .about-us__h2 {
+  .about-us__titulo {
     font-size: 1.6rem;
   }
 
@@ -1218,11 +1219,11 @@ justify-content: center;
 
 @media (max-width:420px) {
 
-  .portada__h1 {
+  .portada__link {
     font-size: 3rem;
   }
 
-  .portada__h1:hover {
+  .portada__link:hover {
     font-size: 3rem;
   }
 
@@ -1249,15 +1250,15 @@ justify-content: center;
 
 @media (max-width:370px) {
 
-  .portada__h2-mobile-1 {
+  .portada__slogan-mobile-1 {
     font-size: 1.8rem;
   }
 
-  .portada__h2-mobile-2 {
+  .portada__slogan-mobile-2 {
     font-size: 1.25rem;
   }
 
-  .portada__h2-mobile-3 {
+  .portada__slogan-mobile-3 {
     font-size: 1.25rem;
   }
 
@@ -1274,13 +1275,13 @@ justify-content: center;
     align-items: center;
   }
 
-  .portada__h2-mobile-1 {
+  .portada__slogan-mobile-1 {
     display: none;
   }
-  .portada__h2-mobile-2 {
+  .portada__slogan-mobile-2 {
     display: none;
   }
-  .portada__h2-mobile-3 {
+  .portada__slogan-mobile-3 {
     display: none;
   }
 }
