@@ -152,22 +152,10 @@ button {
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
 }
 
-.portada__slogan-mobile-1 {
+.portada__slogan-mobile {
   display: none;
   font-family: 'Overlock', cursive;
   font-weight: bold;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
-}
-
-.portada__slogan-mobile-2 {
-  display: none;
-  font-family: 'Overlock', cursive;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
-}
-
-.portada__slogan-mobile-3 {
-  display: none;
-  font-family: 'Overlock', cursive;
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
 }
 
@@ -221,6 +209,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin: 50px 0 50px 0;
 }
 
 .productos-index__cabecera-wide {
@@ -548,7 +537,7 @@ footer {
   height: 25px;
 }
 
-.footer__cont-href {
+.footer__cont-links {
   margin-top: 10px;
   text-decoration: underline;
   display: flex;
@@ -556,7 +545,7 @@ footer {
   gap: 20px;
 }
 
-.footer__href {
+.footer__link {
   color: blue;
 }
 
@@ -1119,22 +1108,18 @@ justify-content: center;
     display: none;
   }
 
-  .portada__slogan-mobile-1 {
-    display: block;
+  .portada__slogan-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 2.25rem;
     color: white;
   }
   
-  .portada__slogan-mobile-2 {
-    display: block;
-    color: white;
+  .portada__slogan-mobile--span {
+    font-weight: normal;
+    font-size: 2rem;
   }
-  
-  .portada__slogan-mobile-3 {
-    display: block;
-    color: white;
-  }
-  
 
 }
 
@@ -1181,7 +1166,7 @@ justify-content: center;
 
   }
 
-  .footer__href {
+  .footer__link {
     font-size: 0.75rem;
   }
 
@@ -1251,18 +1236,6 @@ justify-content: center;
 
 @media (max-width:370px) {
 
-  .portada__slogan-mobile-1 {
-    font-size: 1.8rem;
-  }
-
-  .portada__slogan-mobile-2 {
-    font-size: 1.25rem;
-  }
-
-  .portada__slogan-mobile-3 {
-    font-size: 1.25rem;
-  }
-
   .portada__lists {
     gap: 60px;
   }
@@ -1276,13 +1249,7 @@ justify-content: center;
     align-items: center;
   }
 
-  .portada__slogan-mobile-1 {
-    display: none;
-  }
-  .portada__slogan-mobile-2 {
-    display: none;
-  }
-  .portada__slogan-mobile-3 {
+  .portada__slogan-mobile {
     display: none;
   }
 }
