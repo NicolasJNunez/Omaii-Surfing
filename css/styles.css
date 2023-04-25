@@ -223,16 +223,17 @@ button {
   gap: 20px;
 }
 
-.productos-index__h4-wide {
+.productos-index__cabecera-wide {
+  font-size: 1rem;
   color: rgba(75, 75, 75, 0.637);
 }
 
-.productos-index__h4-narrow {
+.productos-index__cabecera-narrow {
   display: none;
   color: rgba(75, 75, 75, 0.637)
 }
 
-.productos-index__h3-wide {
+.productos-index__oferta-wide {
   font-size: 2rem;
   color: #254642;
 }
@@ -943,7 +944,7 @@ margin-right: 5px;
 
 @media (max-width:990px) {
 
-.productos-index__h4-wide {
+.productos-index__cabecera-wide {
   font-size: 0.8rem;
 }
 
@@ -1040,15 +1041,15 @@ justify-content: center;
 
 @media (max-width:740px) {
 
-  .productos-index__h4-wide {
+  .productos-index__cabecera-wide {
     display: none;
   }
 
-  .productos-index__h3-wide {
+  .productos-index__oferta-wide {
     display: none;
   }
 
-  .productos-index__h4-narrow {
+  .productos-index__cabecera-narrow {
     display: block;
     color: rgba(109, 109, 109, 0.637);
     font-size: 0.9rem;
@@ -1239,7 +1240,7 @@ justify-content: center;
     padding: 2.5em;
   }
 
-  .productos-index__h4-narrow {
+  .productos-index__cabecera-narrow {
     font-size: 0.76rem;
     margin-top: 40px;
   }
