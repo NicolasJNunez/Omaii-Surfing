@@ -1,0 +1,12 @@
+.icono-flecha {
+  width: 60px;
+  position: sticky;
+  bottom: 30px;
+  left: 95.5%;
+  margin: 20px;
+  transition: 0.3s ease;
+  &:hover {
+    width: 65px;
+    }
+}
+

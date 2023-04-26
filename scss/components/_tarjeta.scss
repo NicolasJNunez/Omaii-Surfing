@@ -1,0 +1,81 @@
+.tarjeta {
+  width: 300px;
+  height: 445px;
+  border: 2px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  &__body {
+    font-size: 1.2rem;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  &__titulo {
+    font-size: 1.2rem;
+  }
+  &__img-neoprene {
+    width: 280px;
+    height: 275px;
+    transition: 0.3s ease;
+  }
+  &__img-neoprene:hover {
+    width: 295px;
+    height: 290px;
+  }
+  &__img-tablablanca {
+    width: 200px;
+    height: 275px;
+    transition: 0.3s ease;
+  }
+  &__img-tablablanca:hover {
+    width: 215px;
+    height: 290px;
+  }
+  &__img-quillon {
+    width: 290px;
+    height: 275px;
+    transition: 0.3s ease;
+  }
+  &__img-quillon:hover {
+    width: 305px;
+    height: 290px;
+  }
+  &__img-leash {
+    width: 240px;
+    height: 275px;
+    transition: 0.3s ease;
+  }
+  &__img-leash:hover {
+    width: 255px;
+    height: 290px;
+  }
+  &__span {
+    text-decoration: line-through;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

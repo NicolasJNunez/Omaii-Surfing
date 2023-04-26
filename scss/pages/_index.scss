@@ -1,0 +1,279 @@
+.portada {
+  width: 100%;
+  height: 100vh;
+  font-size: 1rem;
+  padding: 1.5em;
+  box-shadow: inset 0px 150px 100px 0px rgba(0, 0, 0, 0.37);
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__link {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Caveat', cursive;
+    transition: 0.5s ease;
+    text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.575);
+  }
+  &__link:hover{
+    font-size: 4.3rem;
+    -webkit-text-stroke: 2px rgb(255, 255, 255) ;
+    color: transparent;
+  }
+  &__lists {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__list-usuario {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.15rem;
+  }
+  &__list-navegacion {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    gap: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.575);
+  }
+  &__link-navegacion {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.575);
+    transition: 0.7s ease;
+  }
+  &__link-navegacion:hover {
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+  }
+  &__link-usuario {
+    transition: 0.7s ease;
+  }
+  &__link-usuario:hover {
+    color: rgb(255, 255, 255);
+    font-size: 1.17rem;
+  }
+  &__texto {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+  }
+  &__slogan {
+    font-weight: lighter;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.774);
+    font-family: 'Baloo Tamma 2', cursive;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+  }
+  &__slogan-desktop {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: white;
+    font-family: 'Overlock', cursive;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
+  }
+  &__strong-desktop {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
+  }
+  &__slogan-mobile {
+    display: none;
+    font-family: 'Overlock', cursive;
+    font-weight: bold;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
+  }
+  &__video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.about-us {
+  width: 100%;
+  font-size: 1rem;
+  padding: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-family: 'Baloo Tamma 2', cursive;
+  &__titulo {
+    font-size: 3rem;
+    color: #254642;
+  }
+  &__strong {
+    font-weight: bold;
+    color: #254642;
+  }
+  &__parrafo {
+    width: 60%;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(75, 75, 75, 0.637);
+  }
+}
+
+.productos-index {
+  &__texto {
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0 50px 0;
+  }
+  &__cabecera-wide {
+    font-size: 1rem;
+    color: rgba(75, 75, 75, 0.637);
+  }
+  &__cabecera-narrow {
+    display: none;
+    color: rgba(75, 75, 75, 0.637)
+  }
+  &__oferta-wide {
+    font-size: 2rem;
+    color: #254642;
+  }
+  &__strong-wide {
+    font-weight: bold;
+  }
+  &__strong-narrow {
+    font-weight: bold;
+  }
+  &__h3-narrow {
+    display: none;
+    color: #254642;
+  }
+  
+}
+
+.grilla-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 600px);
+  column-gap: 200px;
+  margin-bottom: 70px;
+  &__celda-neopreno {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  &__celda-tabla {
+    display: flex;
+    align-items: center;
+  }
+  &__celda-quillon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  &__celda-leash {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.reserva {
+  background-image: url("../img/fototablasfondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15vh;
+  gap: 10vh;
+  color: white;
+  &__cont-video {
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  &__cont-video iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 82.5%;
+  }
+  &__titulo {
+    font-weight: bold;
+  }
+  &__texto {
+    font-size: 2rem;
+    background-color: rgba(8, 8, 8, 0.603);
+    padding: 0.7em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  &__parrafo {
+    text-align: center;
+  }
+  &__btn {
+    font-size: 1.1rem;
+    border: 3px solid black;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    padding: 0.36em;
+    background-color: white;
+    transition: 0.3s ease;
+  }
+  &__btn:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    font-size: 1.2rem;
+  }
+  
+}
+
+.subir {
+  position: absolute;
+  top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

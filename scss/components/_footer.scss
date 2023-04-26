@@ -1,0 +1,90 @@
+footer {
+  margin-bottom: 20px;
+}
+
+.footer {
+  &__grilla-iconos {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 30px 30px;
+  }
+  &__iconos {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  &__icono-facebook {
+    width: 50px;
+  }
+  &__icono-instagram {
+    width: 46px;
+  }
+  &__icono-youtube {
+    width: 50px;
+  }
+  &__icono-twitter {
+    width: 50px;
+  }
+  &__icono-telefono {
+    width: 40px;
+  }
+  &__linea-izq {
+    border-top: black 0.1px solid;
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  &__linea-der {
+    border-top: black 0.1px solid;
+    grid-column: 3/4;
+    grid-row: 2;
+  }
+  &__cont-logo-cpy {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  &__logo {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+  }
+  &__cpy {
+    display: flex;
+    gap: 5px;
+  }
+  &__icono-cpy {
+    width: 25px;
+    margin-top: -4px;
+  }
+  &__cont-links {
+    margin-top: 10px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__link {
+    color: blue;
+  }
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  &__btn {
+    width: 52px; 
+    height: 25px;
+  }
+  
+}
+
+
+

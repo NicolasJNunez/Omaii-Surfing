@@ -1,0 +1,10 @@
+.header {
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+  }
+  &__icon {
+    width: 25px;
+  }
+}

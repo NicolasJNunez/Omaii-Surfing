@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  text-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
+h1 {
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+select {
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+}
