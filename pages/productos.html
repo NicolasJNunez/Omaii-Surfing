@@ -14,103 +14,78 @@
 <body>
   
   <header class="header-secciones">
-    
-    <h1 class="header-secciones__h1" id="h1">
-      <a class="header-secciones__h1-href" href="../index.html">O'maii Surfing™</a>
+    <h1 class="header-secciones__titulo" id="h1">
+      <a class="header-secciones__titulo-link" href="../index.html">O'maii Surfing™</a>
     </h1>
-    
     <nav class="header-secciones__nav">
       <ul class="header-secciones__list-usuario">
-        <li class="header__item"><img class="header__icon" src="../img/icono-contacto.png" alt="icono contacto"><a class="header-secciones__item-href" href="./contacto.html">Crear Cuenta</a>
+        <li class="header__item"><img class="header__icon" src="../img/icono-contacto.png" alt="icono contacto"><a class="header-secciones__item-link" href="./contacto.html">Crear Cuenta</a>
         </li>
-        <li class="header__item"><img class="header__icon" src="../img/location-icono.png" alt="icono mapa"> <a class="header-secciones__item-href" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde estamos</a>
+        <li class="header__item"><img class="header__icon" src="../img/location-icono.png" alt="icono mapa"> <a class="header-secciones__item-link" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde estamos</a>
         </li>
       </ul>
       <ul class="header-secciones__list-navegacion">
-        <li><a class="header-secciones__item-href" href="./surf.html">Surf</a></li>
-        <li><a class="header-secciones__item-href" href="./clases.html">Clases</a></li>
-        <li><a class="header-secciones__item-href" href="./productos.html">Productos</a>
+        <li><a class="header-secciones__item-link" href="./surf.html">Surf</a></li>
+        <li><a class="header-secciones__item-link" href="./clases.html">Clases</a></li>
+        <li><a class="header-secciones__item-link" href="./productos.html">Productos</a>
         </li>
       </ul>
     </nav>
-    
   </header>
   
   <main class="productos">
-    
     <section class="productos__formulario">
-      
       <h2>Filtrar por:</h2>
-      
       <hr>
-      
       <form action="" class="productos__form-categoria">
-        
         <div>
           <span>CATEGORIA</span>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="tablas">
           <label for="tablas">Tablas</label>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="trajesdeneoprene">
           <label for="trajesdeneoprene">Trajes de neoprene</label>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="equipamientodetabla">
           <label for="equipamientodetabla">Equipamiento de tabla</label>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="toallasyponchos">
           <label for="toallasyponchos">Toallas y Ponchos</label>
         </div>
-        
       </form>
-      
       <hr>
-      
       <form action="" class="productos__form-marca">
-      
         <div>
           <span>MARCA</span>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="firewire">
           <label for="firewire">Firewire</label>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="channelislands">
           <label for="channelislands">Channelislands</label>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="lostdriver">
           <label for="lostdriver">Lost Driver</label>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="quiksilver">
           <label for="quiksilver">Quiksilver</label>
         </div>
-        
         <div>
           <input type="radio" name="categoria" id="roxy">
           <label for="roxy">Roxy</label>
         </div>
-        
         <hr class="productos__hr">
-        
         <div class="productos__cont-precio">
-          
           <label for="precio">Precio</label>
-          
           <select name="precioproducto" id="precio">
             <option value="precio0">-</option>
             <option value="precio">Entre 0$ y $5000</option>
@@ -118,15 +93,10 @@
             <option value="precio3">Entre $10000 y $20000</option>
             <option value="precio4">$20000 en adelante</option>
           </select>
-          
         </div>
-        
         <hr>
-        
         <div class="productos__cont-talle">
-          
           <label for="talle">Talle</label>
-          
           <select name="talle" id="talle">
             <option value="0">-</option>
             <option value="s">S</option>
@@ -135,21 +105,13 @@
             <option value="xl">XL</option>
             <option value="xxl">XXL</option>
           </select>
-          
         </div>
-        
       </form>
-      
       <hr>
-      
     </section>
-    
     <div>
-      
       <form action="" class="productos__form-orden">
-        
         <label class="productos__label-orden" for="orden">Ordenar por:</label>
-        
         <select name="orden" id="orden">
           <option value="0">-</option>
           <option value="relevantes">Relevantes</option>
@@ -157,91 +119,49 @@
           <option value="menorprecio">Menor precio</option>
           <option value="oferta">En oferta</option>
         </select>
-        
       </form>
-      
-      
-      <div class="grilla-productos grilla-productos--seccion">
-        
+      <div class="grilla-productos--seccion">
         <article class="tarjeta">
-          
           <img src="../img/trajedeneoprene.jpg" alt="traje de neopreno" class="tarjeta__img-neoprene">
-          
           <div class="tarjeta__body">
-            
             <h3 class="tarjeta__titulo">Traje de neoprene</h3>
-            
-            <span><span class="tarjeta__span--linethrough">$15000</span> $7000</span>
-            
+            <span><span class="tarjeta__span">$15000</span> $7000</span>
             <a href="./productos.html" target="_blank" class="btn">Comprar</a>
           </div>
-          
         </article>
-        
-        
         <article class="tarjeta">
-          
           <img src="../img/tabla-blanca.png" alt="tabla blanca" class="tarjeta__img-tablablanca">
-          
           <div class="tarjeta__body">
-            
             <h3 class="tarjeta__titulo">Tabla de Surf</h3>
-            
-            <span><span class="tarjeta__span--linethrough">$40000</span> $30000</span>
-            
+            <span><span class="tarjeta__span">$40000</span> $30000</span>
             <a href="./productos.html" target="_blank" class="btn">Comprar</a>
           </div>
-          
         </article>
-        
-        
         <article class="tarjeta">
-          
           <img src="../img/quillon.jpg" alt="quillon" class="tarjeta__img-quillon">
-          
           <div class="tarjeta__body">
-            
             <h3 class="tarjeta__titulo">Quillón</h3>
-            
-            <span><span class="tarjeta__span--linethrough">$7000</span> $5000</span>
-            
+            <span><span class="tarjeta__span">$7000</span> $5000</span>
             <a href="./productos.html" target="_blank" class="btn">Comprar</a>
-            
           </div>
-          
         </article>
-        
-        
         <article class="tarjeta">
-          
           <img src="../img/leash.jpg" alt="leash" class="tarjeta__img-leash">
-          
           <div class="tarjeta__body">
-            
             <h3 class="tarjeta__titulo">Leash</h3>
-            
-            <span><span class="tarjeta__span--linethrough">$5000</span> $2500</span>
-            
+            <span><span class="tarjeta__span">$5000</span> $2500</span>
             <a href="./productos.html" target="_blank" class="btn">Comprar</a>
-            
           </div>
-          
         </article>
-        
       </div>
-      
     </div>
-    
   </main>
   
   <a href="#h1"><img src="../img/flechitaparaarriba.png" class="icono-flecha" alt="icono flecha"></a>
   
   <footer>
-    
     <div class="footer__grilla-iconos">
-      
       <div class="footer__linea-izq"></div>
-      
       <figure class="footer__iconos">
         <img src="../img/iconofacebook.jpg" class="footer__icono-facebook" alt="icono facebook">
         <img src="../img/iconoinstagram.jpg" class="footer__icono-instagram" alt="icono instagram">
@@ -249,26 +169,17 @@
         <img src="../img/iconoyoutube.jpg" class="footer__icono-youtube" alt="icono youtube">
         <img src="../img/iconotelefono.jpg" class="footer__icono-telefono" alt="icono telefono">
       </figure>
-      
       <div class="footer__linea-der"></div>
-      
     </div>
-    
     <div class="footer__cont-logo-cpy">
-      
       <span class="footer__logo">O'maii Surfing™</span>
-      
       <div class="footer__cpy">
         <img src="../img/iconocopyright.jpg" class="footer__icono-cpy" alt="icono copyright">
         <span>O'maii Surfing Todos los derechos reservados, 2022</span>
       </div>
-      
     </div>
-    
     <form action="" class="form">
-      
       <label for="campo-de-mensaje">Escribinos un mensaje</label>
-      
       <div>
         <label for="asunto">Asunto</label>
         <select name="asunto" id="asunto">
@@ -278,20 +189,16 @@
           <option value="otro">Otro</option>
         </select>
       </div>
-      
       <div>
         <textarea name="campo-de-mensaje" id="campo-de-mensaje" cols="30" rows="10"></textarea>
       </div>
-      
       <button class="form__btn">Enviar</button>
     </form>
-    
     <div class="footer__cont-links">
       <a class="footer__link" href="about:blank" target="_blank">Empleos</a>
       <a class="footer__link" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Mapa del sitio</a>
       <a class="footer__link" href="about:blank" target="_blank">Preguntas frecuentes</a>
     </div>
-    
   </footer>
   
 </body>

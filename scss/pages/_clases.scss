@@ -1,0 +1,85 @@
+.clases {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  background-image: url("../img/foto-tubo.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 1.5em;
+  margin-bottom: 100px;
+  &__titulo {
+    text-decoration: underline;
+    margin-bottom: 50px;
+  }
+  &__cont-art {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__tabla-alquiler {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 20px;
+  }
+  &__celdas {
+    font-size: 1.5rem;
+    padding: 0.4em;
+  }
+  &__horario {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.9rem;
+  }
+  &__form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f080;
+    font-size: 1;
+    padding: 0.5em;
+    border-radius: 30px;
+  }
+  &__dia {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__input {
+    font-size: 1.4rem;
+    padding: .1em;
+  }
+  &__hora {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__rad {
+    display: flex; 
+    gap: 20px;
+  }
+  &__rad-btn {
+    transform: scale(1.5);
+  }
+  &__precios {
+    font-size: 1.4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+  }
+}
+
+
+
+
+
+

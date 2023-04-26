@@ -8,3 +8,42 @@
     width: 25px;
   }
 }
+
+.header-secciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__titulo {
+    font-size: 1rem;
+    padding: 1.25em;
+  }
+  &__titulo-link {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    color: black
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 1em 2em 1em 0;
+  }
+  &__list-usuario {
+    display: flex;
+    font-size: 1rem;
+    padding: 0.625em;
+    gap: 20px
+  }
+  &__list-navegacion {
+    display: flex;
+    align-self: end;
+    font-size: 1rem;
+    padding: 0.625em;
+    gap: 20px;
+  }
+  &__item-link {
+    color: black;
+    font-weight: bold;
+    font-size: 1.15rem;
+  }
+}

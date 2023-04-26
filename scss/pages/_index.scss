@@ -165,32 +165,6 @@
   
 }
 
-.grilla-productos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 600px);
-  column-gap: 200px;
-  margin-bottom: 70px;
-  &__celda-neopreno {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  &__celda-tabla {
-    display: flex;
-    align-items: center;
-  }
-  &__celda-quillon {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  &__celda-leash {
-    display: flex;
-    align-items: center;
-  }
-}
-
 .reserva {
   background-image: url("../img/fototablasfondo.jpg");
   background-size: cover;

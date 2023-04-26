@@ -1,0 +1,47 @@
+.productos {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding: 10em;
+  background-image: url("../img/camionetita.jpg");
+  background-position: center;
+  background-size: cover;
+  &__formulario {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.709);
+    padding: 1.6em;
+    border-radius: 20px;
+    height: fit-content;
+  }
+  &__form-categoria {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+  }
+  &__form-marca {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+  }
+  &__form-orden {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px 20px 0;
+  }
+  &__hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__cont-precio {
+    margin-bottom: 20px;
+}
+  &__cont-talle {
+    margin-top: 20px;
+}
+  &__label-orden {
+    margin-right: 5px;
+}
+}

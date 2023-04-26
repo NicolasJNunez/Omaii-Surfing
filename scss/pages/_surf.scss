@@ -1,0 +1,43 @@
+.surf {
+  background-image: url("../img/fondo-palmeras.jpg");
+  font-size: 1.8rem;
+  padding: 1.39em;
+  background-position: center;
+  color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 100px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 50px;
+  &__titulo {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 1em;
+  }
+  &__cont-art {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  &__hr {
+    color: white;
+  }
+  &__articulo {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    font-size: 1.75rem;
+  }
+}
+
+
+
+
+
+
+

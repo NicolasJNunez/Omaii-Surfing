@@ -1,0 +1,54 @@
+.contacto {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border: 2px solid black;
+  font-size: 1.2rem;
+  padding: 1em;
+  margin: 50px 30% 100px;
+  &__titulo {
+    text-decoration: underline;
+  }
+  &__form-inf {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    width: 90%;
+  }
+  &__inp {
+    width: 250px;
+  }
+  &__cont-inic {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__form-inic {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  &__cont-btn {
+    display: flex;
+    justify-content: center;
+  }
+  &__span {
+    color: red;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
