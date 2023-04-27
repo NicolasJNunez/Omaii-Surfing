@@ -31,6 +31,12 @@ button {
   font-family: inherit;
 }
 
+input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .header__item {
   display: flex;
   align-items: flex-end;
