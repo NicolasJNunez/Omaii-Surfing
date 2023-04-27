@@ -256,13 +256,18 @@ input {
   margin: 20px;
   transition: 0.3s ease;
 }
-@media (max-width: 650px) {
+@media (max-width: 860px) {
   .icono-flecha {
     width: 40px;
   }
 }
 .icono-flecha:hover {
   width: 65px;
+}
+@media (max-width: 860px) {
+  .icono-flecha:hover {
+    width: 40px;
+  }
 }
 
 footer {
