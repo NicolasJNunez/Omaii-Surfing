@@ -5,6 +5,10 @@
   font-weight: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.781);
