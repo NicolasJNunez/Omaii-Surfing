@@ -23,7 +23,10 @@
   }
   @include w528 () {
     padding: 3em 1em;
-    margin: 25px 0 100px;
+    margin: 25px 0 40px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
   }
   &__titulo {
     text-decoration: underline;

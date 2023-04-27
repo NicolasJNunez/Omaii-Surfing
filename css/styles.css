@@ -1020,7 +1020,10 @@ footer {
 @media (max-width: 528px) {
   .contacto {
     padding: 3em 1em;
-    margin: 25px 0 100px;
+    margin: 25px 0 40px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
   }
 }
 .contacto__titulo {
@@ -1275,13 +1278,45 @@ footer {
   padding: 1.5em;
   margin-bottom: 100px;
 }
+@media (max-width: 1024px) {
+  .clases {
+    padding: 0.5em;
+  }
+}
+@media (max-width: 879px) {
+  .clases {
+    padding: 1em 0.5em;
+  }
+}
 .clases__titulo {
   text-decoration: underline;
   margin-bottom: 50px;
 }
+@media (max-width: 1460px) {
+  .clases__titulo {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1150px) {
+  .clases__titulo {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 879px) {
+  .clases__titulo {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
 .clases__cont-art {
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 879px) {
+  .clases__cont-art {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 .clases__tabla-alquiler {
   display: flex;
@@ -1291,9 +1326,29 @@ footer {
   font-size: 1.5rem;
   gap: 20px;
 }
+@media (max-width: 1460px) {
+  .clases__tabla-alquiler {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1150px) {
+  .clases__tabla-alquiler {
+    font-size: 1rem;
+  }
+}
 .clases__celdas {
   font-size: 1.5rem;
   padding: 0.4em;
+}
+@media (max-width: 1460px) {
+  .clases__celdas {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1150px) {
+  .clases__celdas {
+    font-size: 0.9rem;
+  }
 }
 .clases__horario {
   display: flex;
@@ -1302,6 +1357,21 @@ footer {
   align-items: center;
   gap: 20px;
   font-size: 1.9rem;
+}
+@media (max-width: 1460px) {
+  .clases__horario {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1150px) {
+  .clases__horario {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 879px) {
+  .clases__horario {
+    order: -1;
+  }
 }
 .clases__form {
   display: flex;
@@ -1323,6 +1393,16 @@ footer {
   font-size: 1.4rem;
   padding: 0.1em;
 }
+@media (max-width: 1460px) {
+  .clases__input {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1150px) {
+  .clases__input {
+    font-size: 0.9rem;
+  }
+}
 .clases__hora {
   display: flex;
   align-items: center;
@@ -1332,8 +1412,23 @@ footer {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 1150px) {
+  .clases__rad {
+    gap: 10px;
+  }
+}
 .clases__rad-btn {
   transform: scale(1.5);
+}
+@media (max-width: 1460px) {
+  .clases__rad-btn {
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 1150px) {
+  .clases__rad-btn {
+    transform: scale(1);
+  }
 }
 .clases__precios {
   font-size: 1.4rem;
@@ -1343,6 +1438,36 @@ footer {
   align-items: center;
   gap: 15px;
   border-radius: 20px;
+}
+@media (max-width: 1460px) {
+  .clases__precios {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1150px) {
+  .clases__precios {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 879px) {
+  .clases__precios {
+    margin-top: -17.5px;
+  }
+}
+@media (max-width: 879px) {
+  .clases__cont-divisor {
+    display: flex;
+    justify-content: center;
+  }
+}
+.clases__divisor {
+  width: 60%;
+  color: rgba(0, 0, 0, 0.425);
+}
+@media (max-width: 478px) {
+  .clases__divisor {
+    width: 80%;
+  }
 }
 
 .productos {

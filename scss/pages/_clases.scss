@@ -7,13 +7,33 @@
   background-size: cover;
   padding: 1.5em;
   margin-bottom: 100px;
+  @include w1024 () {
+    padding: .5em;
+  }
+  @include w879 () {
+    padding: 1em .5em;
+  }
   &__titulo {
     text-decoration: underline;
     margin-bottom: 50px;
+    @include w1460 () {
+      font-size: 2.5rem;
+    }
+    @include w1150 () {
+      font-size: 2rem;
+    }
+    @include w879 () {
+      text-align: center;
+      margin-top: 20px;
+    }
   }
   &__cont-art {
     display: flex;
     justify-content: space-evenly;
+    @include w879 () {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
   &__tabla-alquiler {
     display: flex;
@@ -22,10 +42,22 @@
     align-items: center;
     font-size: 1.5rem;
     gap: 20px;
+    @include w1460 () {
+      font-size: 1.1rem;
+    }
+    @include w1150 () {
+      font-size: 1rem;
+    }
   }
   &__celdas {
     font-size: 1.5rem;
     padding: 0.4em;
+    @include w1460 () {
+      font-size: 1rem;
+    }
+    @include w1150 () {
+      font-size: 0.9rem;
+    }
   }
   &__horario {
     display: flex;
@@ -34,6 +66,15 @@
     align-items: center;
     gap: 20px;
     font-size: 1.9rem;
+    @include w1460 () {
+      font-size: 1.5rem;
+    }
+    @include w1150 () {
+      font-size: 1.2rem;
+    }
+    @include w879 () {
+      order: -1;
+    }
   }
   &__form {
     display: flex;
@@ -54,6 +95,12 @@
   &__input {
     font-size: 1.4rem;
     padding: .1em;
+    @include w1460 () {
+      font-size: 1rem;
+    }
+    @include w1150 () {
+      font-size: 0.9rem;
+    }
   }
   &__hora {
     display: flex;
@@ -63,9 +110,18 @@
   &__rad {
     display: flex; 
     gap: 20px;
+    @include w1150 () {
+      gap: 10px;
+    }
   }
   &__rad-btn {
     transform: scale(1.5);
+    @include w1460 () {
+      transform: scale(1.2);
+    }
+    @include w1150 () {
+      transform: scale(1);
+    }
   }
   &__precios {
     font-size: 1.4rem;
@@ -75,6 +131,28 @@
     align-items: center;
     gap: 15px;
     border-radius: 20px;
+    @include w1460 () {
+      font-size: 1.1rem;
+    }
+    @include w1150 () {
+      font-size: 1rem;
+    }
+    @include w879 () {
+      margin-top: -17.5px;
+    }
+  }
+  &__cont-divisor {
+    @include w879 () {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__divisor {
+    width: 60%;
+    color: rgba(0, 0, 0, 0.425);
+    @include w478 () {
+      width: 80%;
+    }
   }
 }
 
