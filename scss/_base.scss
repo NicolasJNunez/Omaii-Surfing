@@ -12,6 +12,7 @@ $tipo-overlock: 'Overlock', cursive;
 $tipo-baloo: 'Baloo Tamma 2', cursive;
 $tipo-caveat: 'Caveat', cursive;
 $tipo-merri: 'Merriweather Sans', sans-serif;
+$tipo-open: 'Open Sans', sans-serif;
 
 * {
   margin: 0;
@@ -35,7 +36,7 @@ h1 {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $tipo-open;
 }
 
 select {
