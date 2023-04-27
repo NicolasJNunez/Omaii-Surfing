@@ -35,8 +35,8 @@
   
   <main class="productos">
     <section class="productos__formulario">
-      <h2>Filtrar por:</h2>
-      <hr>
+      <h2 class="productos__titulo">Filtrar por:</h2>
+      <hr class="productos__hr-filtrar">
       <form action="" class="productos__form-categoria">
         <div>
           <span>CATEGORIA</span>
@@ -58,35 +58,38 @@
           <label for="toallasyponchos">Toallas y Ponchos</label>
         </div>
       </form>
-      <hr>
+      <hr class="productos__hr-category">
       <form action="" class="productos__form-marca">
-        <div>
-          <span>MARCA</span>
+        <div class="productos__cont-brand">
+          <div>
+            <span>MARCA</span>
+          </div>
+          <div>
+            <input type="radio" name="categoria" id="firewire">
+            <label for="firewire">Firewire</label>
+          </div>
+          <div>
+            <input type="radio" name="categoria" id="channelislands">
+            <label for="channelislands">Channelislands</label>
+          </div>
+          <div>
+            <input type="radio" name="categoria" id="lostdriver">
+            <label for="lostdriver">Lost Driver</label>
+          </div>
+          <div>
+            <input type="radio" name="categoria" id="quiksilver">
+            <label for="quiksilver">Quiksilver</label>
+          </div>
+          <div>
+            <input type="radio" name="categoria" id="roxy">
+            <label for="roxy">Roxy</label>
+          </div>
         </div>
-        <div>
-          <input type="radio" name="categoria" id="firewire">
-          <label for="firewire">Firewire</label>
-        </div>
-        <div>
-          <input type="radio" name="categoria" id="channelislands">
-          <label for="channelislands">Channelislands</label>
-        </div>
-        <div>
-          <input type="radio" name="categoria" id="lostdriver">
-          <label for="lostdriver">Lost Driver</label>
-        </div>
-        <div>
-          <input type="radio" name="categoria" id="quiksilver">
-          <label for="quiksilver">Quiksilver</label>
-        </div>
-        <div>
-          <input type="radio" name="categoria" id="roxy">
-          <label for="roxy">Roxy</label>
-        </div>
-        <hr class="productos__hr">
+      </form>
+        <hr class="productos__hr-brand">
         <div class="productos__cont-precio">
           <label for="precio">Precio</label>
-          <select name="precioproducto" id="precio">
+          <select class="productos__select-precio" name="precioproducto" id="precio">
             <option value="precio0">-</option>
             <option value="precio">Entre 0$ y $5000</option>
             <option value="precio2">Entre $5000 y $10000</option>
@@ -94,7 +97,7 @@
             <option value="precio4">$20000 en adelante</option>
           </select>
         </div>
-        <hr>
+        <hr class="productos__hr-precio">
         <div class="productos__cont-talle">
           <label for="talle">Talle</label>
           <select name="talle" id="talle">
@@ -106,29 +109,31 @@
             <option value="xxl">XXL</option>
           </select>
         </div>
-      </form>
-      <hr>
     </section>
     <div>
       <form action="" class="productos__form-orden">
-        <label class="productos__label-orden" for="orden">Ordenar por:</label>
-        <select name="orden" id="orden">
-          <option value="0">-</option>
-          <option value="relevantes">Relevantes</option>
-          <option value="mayorprecio">Mayor precio</option>
-          <option value="menorprecio">Menor precio</option>
-          <option value="oferta">En oferta</option>
-        </select>
+        <div>
+          <label class="productos__label-orden" for="orden">Ordenar por:</label>
+          <select name="orden" id="orden">
+            <option value="0">-</option>
+            <option value="relevantes">Relevantes</option>
+            <option value="mayorprecio">Mayor precio</option>
+            <option value="menorprecio">Menor precio</option>
+            <option value="oferta">En oferta</option>
+          </select>
+        </div>
       </form>
       <div class="grilla-productos--seccion">
-        <article class="tarjeta">
-          <img src="../img/trajedeneoprene.jpg" alt="traje de neopreno" class="tarjeta__img-neoprene">
-          <div class="tarjeta__body">
-            <h3 class="tarjeta__titulo">Traje de neoprene</h3>
-            <span><span class="tarjeta__span">$15000</span> $7000</span>
-            <a href="./productos.html" target="_blank" class="btn">Comprar</a>
-          </div>
-        </article>
+        <div class="celda-neoprene">
+          <article class="tarjeta">
+            <img src="../img/trajedeneoprene.jpg" alt="traje de neopreno" class="tarjeta__img-neoprene">
+            <div class="tarjeta__body">
+              <h3 class="tarjeta__titulo">Traje de neoprene</h3>
+              <span><span class="tarjeta__span">$15000</span> $7000</span>
+              <a href="./productos.html" target="_blank" class="btn">Comprar</a>
+            </div>
+          </article>
+        </div>
         <article class="tarjeta">
           <img src="../img/tabla-blanca.png" alt="tabla blanca" class="tarjeta__img-tablablanca">
           <div class="tarjeta__body">
@@ -137,14 +142,16 @@
             <a href="./productos.html" target="_blank" class="btn">Comprar</a>
           </div>
         </article>
-        <article class="tarjeta">
-          <img src="../img/quillon.jpg" alt="quillon" class="tarjeta__img-quillon">
-          <div class="tarjeta__body">
-            <h3 class="tarjeta__titulo">Quillón</h3>
-            <span><span class="tarjeta__span">$7000</span> $5000</span>
-            <a href="./productos.html" target="_blank" class="btn">Comprar</a>
-          </div>
-        </article>
+        <div class="celda-quillon">
+          <article class="tarjeta">
+            <img src="../img/quillon.jpg" alt="quillon" class="tarjeta__img-quillon">
+            <div class="tarjeta__body">
+              <h3 class="tarjeta__titulo">Quillón</h3>
+              <span><span class="tarjeta__span">$7000</span> $5000</span>
+              <a href="./productos.html" target="_blank" class="btn">Comprar</a>
+            </div>
+          </article>
+        </div>
         <article class="tarjeta">
           <img src="../img/leash.jpg" alt="leash" class="tarjeta__img-leash">
           <div class="tarjeta__body">

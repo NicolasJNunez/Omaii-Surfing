@@ -78,6 +78,12 @@ button {
   }
 }
 
+@mixin minw1377 {
+  @media (min-width:1377px) {
+    @content
+  }
+}
+
 @mixin w1350 {
   @media (max-width:1350px) {
     @content;
@@ -120,6 +126,12 @@ button {
   }
 }
 
+@mixin w924 {
+  @media (max-width:924px) {
+    @content;
+  }
+}
+
 @mixin w879 {
   @media (max-width:879px) {
     @content;
@@ -158,6 +170,12 @@ button {
 
 @mixin w720 {
   @media (max-width:720px) {
+    @content;
+  }
+}
+
+@mixin w688 {
+  @media (max-width:688px) {
     @content;
   }
 }
