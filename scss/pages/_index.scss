@@ -327,6 +327,9 @@
     width: 80%;
     padding-bottom: 56.25%; 
     height: 0;
+    @include w579 () {
+      margin-bottom: 40px;
+    }
   }
   &__cont-video iframe {
     position: absolute;
@@ -338,12 +341,18 @@
       font-size: 1rem;
       padding-bottom: 1.25em;
     }
-    @include w860 () {
-      width: 70%;
-    }
   }
   &__titulo {
     font-weight: bold;
+    @include w860 () {
+      font-size: 2rem;
+    }
+    @include w500 () {
+      font-size: 1.8rem;
+    }
+    @include w360 () {
+      font-size: 1.5rem;
+    }
   }
   &__texto {
     font-size: 2rem;
@@ -354,28 +363,22 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    @include w1638 () {
-      width: 40%;
-      border-radius: 30px;
-    }
-    @include w1377 () {
+    @include minw1460 () {
       width: 50%;
-    }
-    @include w860 () {
-      width: 60%;
-    }
-    @include w670 () {
-      width: 70%;
-    }
-    @include w500 () {
-      font-size: 1.6rem;
-    }
-    @include w360 () {
-      font-size: 1.4rem;
+      border-radius: 30px;
     }
   }
   &__parrafo {
     text-align: center;
+    @include w860 () {
+      font-size: 1.6rem;
+    }
+    @include w500 () {
+      font-size: 1.4rem;
+    }
+    @include w360 () {
+      font-size: 1.1rem;
+    }
   }
   &__btn {
     font-size: 1.1rem;

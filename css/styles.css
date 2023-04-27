@@ -45,20 +45,45 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 725px) {
+  .header-secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .header-secciones__titulo {
   font-size: 1rem;
   padding: 1.25em;
 }
+@media (max-width: 725px) {
+  .header-secciones__titulo {
+    padding: 0.8em;
+  }
+}
 .header-secciones__titulo-link {
   font-family: "Caveat", cursive;
   font-size: 3rem;
-  color: black;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 879px) {
+  .header-secciones__titulo-link {
+    font-size: 2.5rem;
+  }
 }
 .header-secciones__nav {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   padding: 1em 2em 1em 0;
+}
+@media (max-width: 725px) {
+  .header-secciones__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 0.5em 0;
+  }
 }
 .header-secciones__list-usuario {
   display: flex;
@@ -73,10 +98,26 @@ button {
   padding: 0.625em;
   gap: 20px;
 }
+@media (max-width: 725px) {
+  .header-secciones__list-navegacion {
+    align-self: center;
+    margin-left: 15px;
+  }
+}
 .header-secciones__item-link {
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 1.15rem;
+}
+@media (max-width: 990px) {
+  .header-secciones__item-link {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 879px) {
+  .header-secciones__item-link {
+    font-size: 1rem;
+  }
 }
 
 .tarjeta {
@@ -797,6 +838,11 @@ footer {
   padding-bottom: 56.25%;
   height: 0;
 }
+@media (max-width: 579px) {
+  .reserva__cont-video {
+    margin-bottom: 40px;
+  }
+}
 .reserva__cont-video iframe {
   position: absolute;
   top: 0;
@@ -810,13 +856,23 @@ footer {
     padding-bottom: 1.25em;
   }
 }
-@media (max-width: 860px) {
-  .reserva__cont-video iframe {
-    width: 70%;
-  }
-}
 .reserva__titulo {
   font-weight: bold;
+}
+@media (max-width: 860px) {
+  .reserva__titulo {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .reserva__titulo {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 360px) {
+  .reserva__titulo {
+    font-size: 1.5rem;
+  }
 }
 .reserva__texto {
   font-size: 2rem;
@@ -828,39 +884,29 @@ footer {
   align-items: center;
   gap: 20px;
 }
-@media (max-width: 1638px) {
-  .reserva__texto {
-    width: 40%;
-    border-radius: 30px;
-  }
-}
-@media (max-width: 1377px) {
+@media (min-width: 1460px) {
   .reserva__texto {
     width: 50%;
-  }
-}
-@media (max-width: 860px) {
-  .reserva__texto {
-    width: 60%;
-  }
-}
-@media (max-width: 670px) {
-  .reserva__texto {
-    width: 70%;
-  }
-}
-@media (max-width: 500px) {
-  .reserva__texto {
-    font-size: 1.6rem;
-  }
-}
-@media (max-width: 360px) {
-  .reserva__texto {
-    font-size: 1.4rem;
+    border-radius: 30px;
   }
 }
 .reserva__parrafo {
   text-align: center;
+}
+@media (max-width: 860px) {
+  .reserva__parrafo {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .reserva__parrafo {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 360px) {
+  .reserva__parrafo {
+    font-size: 1.1rem;
+  }
 }
 .reserva__btn {
   font-size: 1.1rem;
@@ -936,7 +982,7 @@ footer {
   font-size: 1.8rem;
   padding: 1.39em;
   background-position: center;
-  color: white;
+  color: rgb(255, 255, 255);
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 100px;
@@ -945,19 +991,103 @@ footer {
   align-items: center;
   gap: 50px;
 }
+@media (max-width: 420px) {
+  .surf {
+    font-size: 1rem;
+    padding: 1.875em;
+  }
+}
+@media (max-width: 396px) {
+  .surf {
+    padding: 1.25em;
+  }
+}
+@media (max-width: 378px) {
+  .surf {
+    padding: 1em;
+  }
+}
+@media (max-width: 355px) {
+  .surf {
+    gap: 20px;
+  }
+}
 .surf__titulo {
   text-decoration: underline;
   font-weight: bold;
   font-size: 5rem;
   padding: 1em;
 }
+@media (max-width: 1200px) {
+  .surf__titulo {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 879px) {
+  .surf__titulo {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 725px) {
+  .surf__titulo {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 660px) {
+  .surf__titulo {
+    font-size: 2.1rem;
+    padding: 40px 0 0 0;
+  }
+}
+@media (max-width: 579px) {
+  .surf__titulo {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 528px) {
+  .surf__titulo {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 478px) {
+  .surf__titulo {
+    font-size: 1.85rem;
+  }
+}
+@media (max-width: 442px) {
+  .surf__titulo {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 396px) {
+  .surf__titulo {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 355px) {
+  .surf__titulo {
+    margin-bottom: 20px;
+  }
+}
 .surf__cont-art {
   display: flex;
   gap: 20px;
   margin-bottom: 50px;
 }
+@media (max-width: 1200px) {
+  .surf__cont-art {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+}
 .surf__hr {
-  color: white;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1200px) {
+  .surf__hr {
+    display: none;
+  }
 }
 .surf__articulo {
   display: flex;
@@ -966,6 +1096,71 @@ footer {
   text-align: center;
   gap: 15px;
   font-size: 1.75rem;
+}
+@media (max-width: 1680px) {
+  .surf__articulo {
+    font-size: 1.65rem;
+  }
+}
+@media (max-width: 1460px) {
+  .surf__articulo {
+    font-size: 1.54rem;
+  }
+}
+@media (max-width: 1260px) {
+  .surf__articulo {
+    font-size: 1.43rem;
+  }
+}
+@media (max-width: 1150px) {
+  .surf__articulo {
+    font-size: 1.34rem;
+  }
+}
+@media (max-width: 990px) {
+  .surf__articulo {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 879px) {
+  .surf__articulo {
+    font-size: 1.17rem;
+  }
+}
+@media (max-width: 725px) {
+  .surf__articulo {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 660px) {
+  .surf__articulo {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 579px) {
+  .surf__articulo {
+    font-size: 0.968rem;
+  }
+}
+@media (max-width: 528px) {
+  .surf__articulo {
+    font-size: 0.93rem;
+  }
+}
+@media (max-width: 478px) {
+  .surf__articulo {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 442px) {
+  .surf__articulo {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 336px) {
+  .surf__articulo {
+    font-size: 0.84rem;
+  }
 }
 
 .clases {

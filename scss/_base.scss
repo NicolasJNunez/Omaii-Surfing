@@ -54,6 +54,18 @@ button {
   }
 }
 
+@mixin w1460 {
+  @media (max-width:1460px) {
+    @content;
+  }
+}
+
+@mixin minw1460 {
+  @media (min-width:1460px) {
+    @content;
+  }
+}
+
 @mixin w1377 {
   @media (max-width:1377px) {
     @content;
@@ -66,8 +78,26 @@ button {
   }
 }
 
+@mixin w1260 {
+  @media (max-width:1260px) {
+    @content;
+  }
+}
+
 @mixin w1250 {
   @media (max-width:1250px) {
+    @content;
+  }
+}
+
+@mixin w1200 {
+  @media (max-width:1200px) {
+    @content;
+  }
+}
+
+@mixin w1150 {
+  @media (max-width:1150px) {
     @content;
   }
 }
@@ -80,6 +110,12 @@ button {
 
 @mixin w990 {
   @media (max-width:990px) {
+    @content;
+  }
+}
+
+@mixin w879 {
+  @media (max-width:879px) {
     @content;
   }
 }
@@ -108,6 +144,12 @@ button {
   }
 }
 
+@mixin w725 {
+  @media (max-width:725px) {
+    @content;
+  }
+}
+
 @mixin w720 {
   @media (max-width:720px) {
     @content;
@@ -120,8 +162,20 @@ button {
   }
 }
 
+@mixin w660 {
+  @media (max-width:660px) {
+    @content;
+  }
+}
+
 @mixin w650 {
   @media (max-width:650px) {
+    @content;
+  }
+}
+
+@mixin w579 {
+  @media (max-width:579px) {
     @content;
   }
 }
@@ -132,8 +186,26 @@ button {
   }
 }
 
+@mixin w528 {
+  @media (max-width:528px) {
+    @content;
+  }
+}
+
 @mixin w500 {
   @media (max-width:500px) {
+    @content;
+  }
+}
+
+@mixin w478 {
+  @media (max-width:478px) {
+    @content;
+  }
+}
+
+@mixin w442 {
+  @media (max-width:442px) {
     @content;
   }
 }
@@ -150,8 +222,20 @@ button {
   }
 }
 
+@mixin w396 {
+  @media (max-width:396px) {
+    @content;
+  }
+}
+
 @mixin w390 {
   @media (max-width:390px) {
+    @content;
+  }
+}
+
+@mixin w378 {
+  @media (max-width:378px) {
     @content;
   }
 }
@@ -164,6 +248,18 @@ button {
 
 @mixin w360 {
   @media (max-width:360px) {
+    @content;
+  }
+}
+
+@mixin w355 {
+  @media (max-width:355px) {
+    @content;
+  }
+}
+
+@mixin w336 {
+  @media (max-width:336px) {
     @content;
   }
 }
