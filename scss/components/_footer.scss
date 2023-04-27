@@ -32,18 +32,33 @@ footer {
   }
   &__icono-facebook {
     width: 50px;
+    @include w430 () {
+      width: 42.5px;
+    }
   }
   &__icono-instagram {
     width: 46px;
+    @include w430 () {
+      width: 39px;
+    }
   }
   &__icono-youtube {
     width: 50px;
+    @include w430 () {
+      width: 42.5px;
+    }
   }
   &__icono-twitter {
     width: 50px;
+    @include w430 () {
+      width: 42.5px;
+    }
   }
   &__icono-telefono {
     width: 40px;
+    @include w430 () {
+      width: 35px;
+    }
   }
   &__linea-izq {
     border-top: black 0.1px solid;
@@ -66,10 +81,16 @@ footer {
   &__logo {
     font-family: 'Caveat', cursive;
     font-size: 3rem;
+    @include w660 () {
+      font-size: 2.5rem;
+    }
   }
   &__cpy {
     display: flex;
     gap: 5px;
+    @include w660 () {
+      font-size: 0.9rem;
+    }
     @include w430 () {
       font-size: 0.75rem;
     }
@@ -100,6 +121,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 6px;
+  @include w430 () {
+    font-size: 0.8rem;
+  }
   &__btn {
     width: 52px; 
     height: 25px;

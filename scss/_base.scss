@@ -4,7 +4,7 @@ $color-blanco: rgb(255, 255, 255);
 $color-negro: rgb(0, 0, 0);
 $color-gris: rgba(75, 75, 75, 0.637);
 $color-verde: rgb(37, 70, 66);
-
+$color-rojo: rgb(255, 0, 0);
 
 * {
   margin: 0;
@@ -41,6 +41,12 @@ button {
 }
 
 // Media Queries
+
+@mixin w1726 {
+  @media (max-width:1726px) {
+    @content;
+  }
+}
 
 @mixin w1680 {
   @media (max-width:1680px) {
