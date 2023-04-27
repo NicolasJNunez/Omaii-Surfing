@@ -1073,6 +1073,26 @@ footer {
   flex-direction: column;
   gap: 25px;
 }
+.contacto__genero {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contacto__newsletter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 879px) {
+  .contacto__checkbox {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 879px) {
+  .contacto__rad {
+    transform: scale(0.75);
+  }
+}
 .contacto__form-inic {
   display: flex;
   flex-flow: column;

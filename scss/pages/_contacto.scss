@@ -55,6 +55,26 @@
     flex-direction: column;
     gap: 25px;
   }
+  &__genero {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__checkbox {
+    @include w879 () {
+      transform: scale(0.7);
+    }
+  }
+  &__rad {
+    @include w879 () {
+      transform: scale(0.75);
+    }
+  }
   &__form-inic {
     display: flex;
     flex-flow: column;
