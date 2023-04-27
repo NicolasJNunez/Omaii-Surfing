@@ -32,6 +32,9 @@
     text-align: center;
     gap: 15px;
     font-size: 1.75rem;
+    @include w1680 () {
+      font-size: 1.65rem;
+    }
   }
 }
 

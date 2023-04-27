@@ -3,34 +3,71 @@
   height: 100vh;
   font-size: 1rem;
   padding: 1.5em;
-  box-shadow: inset 0px 150px 100px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: inset 0px 150px 100px 0px $shadow-inset;
+  @include w1024 () {
+    box-shadow: inset 0px 225px 100px 0px $shadow-inset;
+  }
+  @include w835 () {
+    box-shadow: inset 0px 250px 100px 0px $shadow-inset;
+  }
   &__nav {
     display: flex;
     justify-content: space-around;
+    @include w1024 () {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
   }
   &__link {
-    color: rgb(255, 255, 255);
+    color: $color-blanco;
     font-size: 4rem;
     font-weight: 900;
     font-family: 'Caveat', cursive;
     transition: 0.5s ease;
-    text-shadow: 1px 5px 10px rgba(0, 0, 0, 0.575);
+    text-shadow: 1px 5px 10px $text-shadow;
+    @include w420 () {
+      font-size: 3rem;
+    }
   }
   &__link:hover{
     font-size: 4.3rem;
-    -webkit-text-stroke: 2px rgb(255, 255, 255) ;
+    -webkit-text-stroke: 2px $color-blanco;
     color: transparent;
+    @include w420 () {
+      font-size: 3rem;
+    }
   }
   &__lists {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @include w1024 () {
+      flex-direction: row-reverse;
+      align-items: baseline;
+      gap: 200px;
+    }
+    @include w835 () {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    }
+    @include w370 () {
+      gap: 60px;
+    }
   }
   &__list-usuario {
     margin-top: 20px;
     display: flex;
     gap: 20px;
     font-size: 1.15rem;
+    @include w370 () {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__list-navegacion {
     display: flex;
@@ -40,23 +77,26 @@
     font-size: 1.3rem;
     font-weight: bold;
     font-family: 'Merriweather Sans', sans-serif;
-    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.575);
+    text-shadow: 0 10px 10px $text-shadow;
+    @include w370 () {
+      align-items: center;
+    }
   }
   &__link-navegacion {
     font-weight: bold;
     font-size: 1.4rem;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.575);
+    text-shadow: 1px 1px 10px $text-shadow;
     transition: 0.7s ease;
   }
   &__link-navegacion:hover {
-    color: rgb(255, 255, 255);
+    color: $color-blanco;
     font-size: 1.6rem;
   }
   &__link-usuario {
     transition: 0.7s ease;
   }
   &__link-usuario:hover {
-    color: rgb(255, 255, 255);
+    color: $color-blanco;
     font-size: 1.17rem;
   }
   &__texto {
@@ -65,32 +105,71 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
+    text-shadow: 0 0 5px $color-negro;
+    @include w835 () {
+      height: 50vh;
+      }
   }
   &__slogan {
     font-weight: lighter;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.774);
     font-family: 'Baloo Tamma 2', cursive;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
+    text-shadow: 0 0 5px $color-negro;
+    @include w1024 () {
+      font-size: 0.9rem;
+      color: $color-blanco;
+    }
+    @include w650 () {
+      display: none;
+    }
   }
   &__slogan-desktop {
     font-size: 2.5rem;
     font-weight: lighter;
-    color: white;
+    color: $color-blanco;
     font-family: 'Overlock', cursive;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
+    text-shadow: 0 1px 5px $text-shadow;
+    @include w1024 () {
+      font-size: 2rem;
+    }
+    @include w835 () {
+      font-size: 1.5rem;
+    }
+    @include w650 () {
+      display: none;
+    }
   }
   &__strong-desktop {
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
+    text-shadow: 0 1px 5px $text-shadow;
+    @include w1024 () {
+      font-size: 2.5rem;
+    }
+    @include w835 () {
+      font-size: 2.1rem;
+      }
   }
   &__slogan-mobile {
     display: none;
     font-family: 'Overlock', cursive;
     font-weight: bold;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.575);
+    text-shadow: 0 1px 5px $text-shadow;
+    @include w650 () {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.25rem;
+      color: $color-blanco;
+    }
+    @include w370 () {
+      display: none;
+    }
+  }
+  &__span-mobile {
+    text-shadow: 0 1px 5px $text-shadow;
+    font-size: 2rem;
   }
   &__video {
     position: absolute;
@@ -113,19 +192,64 @@
   align-items: center;
   gap: 40px;
   font-family: 'Baloo Tamma 2', cursive;
+  @include w800 () {
+    padding: 6em;
+    gap: 20px;
+  }
+  @include w500 () {
+    padding: 4em;
+  }
+  @include w390 () {
+    padding: 2.5em;
+  }
   &__titulo {
     font-size: 3rem;
-    color: #254642;
+    color: $color-verde;
+    @include w1350 () {
+      font-size: 2.5rem;
+    }
+    @include w1024 () {
+      font-size: 2.2rem;
+    }
+    @include w800 () {
+      font-size: 2rem;
+    }
+    @include w500 () {
+      font-size: 1.6rem;
+    }
   }
   &__strong {
     font-weight: bold;
-    color: #254642;
+    color: $color-verde;
   }
   &__parrafo {
     width: 60%;
     font-size: 2rem;
     text-align: center;
-    color: rgba(75, 75, 75, 0.637);
+    color: $color-gris;
+    @include w1350 () {
+      font-size: 1.7rem;
+    }
+    @include w1024 () {
+      font-size: 1.6rem;
+      width: 80%;
+    }
+    @include w800 () {
+      font-size: 1.4rem;
+      width: 100%;
+    }
+    @include w560 () {
+      font-size: 1.10rem;
+    }
+    @include w500 () {
+      font-size: 1.1rem;
+    }
+    @include w430 () {
+      font-size: 0.99rem;
+    }
+    @include w390 () {
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -142,15 +266,33 @@
   }
   &__cabecera-wide {
     font-size: 1rem;
-    color: rgba(75, 75, 75, 0.637);
+    color: $color-gris;
+    @include w990 () {
+      font-size: 0.8rem;
+    }
+    @include w740 () {
+      display: none;
+    }
   }
   &__cabecera-narrow {
     display: none;
-    color: rgba(75, 75, 75, 0.637)
+    color: $color-gris;
+    @include w740 () {
+      display: block;
+      color: rgba(109, 109, 109, 0.637);
+      font-size: 0.9rem;
+    }
+    @include w390 () {
+      font-size: 0.76rem;
+      margin-top: 40px;
+    }
   }
   &__oferta-wide {
     font-size: 2rem;
-    color: #254642;
+    color: $color-verde;
+    @include w740 () {
+      display: none;
+    }
   }
   &__strong-wide {
     font-weight: bold;
@@ -160,7 +302,11 @@
   }
   &__h3-narrow {
     display: none;
-    color: #254642;
+    color: $color-verde;
+    @include w740 () {
+      display: block;
+      font-size: 2rem;
+    }
   }
   
 }
@@ -175,7 +321,7 @@
   align-items: center;
   padding-top: 15vh;
   gap: 10vh;
-  color: white;
+  color: $color-blanco;
   &__cont-video {
     position: relative;
     width: 80%;
@@ -188,6 +334,13 @@
     left: 0;
     width: 100%;
     height: 82.5%;
+    @include w720 () {
+      font-size: 1rem;
+      padding-bottom: 1.25em;
+    }
+    @include w860 () {
+      width: 70%;
+    }
   }
   &__titulo {
     font-weight: bold;
@@ -201,24 +354,46 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    @include w1638 () {
+      width: 40%;
+      border-radius: 30px;
+    }
+    @include w1377 () {
+      width: 50%;
+    }
+    @include w860 () {
+      width: 60%;
+    }
+    @include w670 () {
+      width: 70%;
+    }
+    @include w500 () {
+      font-size: 1.6rem;
+    }
+    @include w360 () {
+      font-size: 1.4rem;
+    }
   }
   &__parrafo {
     text-align: center;
   }
   &__btn {
     font-size: 1.1rem;
-    border: 3px solid black;
+    border: 3px solid $color-negro;
     font-weight: bold;
-    color: black;
+    color: $color-negro;
     border-radius: 20px;
     padding: 0.36em;
-    background-color: white;
+    background-color: $color-blanco;
     transition: 0.3s ease;
+    @include w430 () {
+      font-size: 0.8rem;
+    }
   }
   &__btn:hover {
-    background-color: black;
-    color: white;
-    border-color: white;
+    background-color: $color-negro;
+    color: $color-blanco;
+    border-color: $color-blanco;
     font-size: 1.2rem;
   }
   

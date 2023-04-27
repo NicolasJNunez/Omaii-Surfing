@@ -7,6 +7,21 @@ footer {
     display: grid;
     grid-template-columns: 40% 20% 40%;
     grid-template-rows: 30px 30px;
+    @include w1250 () {
+      grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+    @include w800 () {
+      grid-template-columns: 25% 50% 25%;
+    }
+    @include w560 () {
+      grid-template-columns: 20% 60% 20%;
+    }
+    @include w430 () {
+      grid-template-columns: 15% 70% 15%;
+    }
+    @include w360 () {
+      grid-template-columns: 10% 80% 10%;
+    }
   }
   &__iconos {
     grid-column: 2/3;
@@ -55,6 +70,9 @@ footer {
   &__cpy {
     display: flex;
     gap: 5px;
+    @include w430 () {
+      font-size: 0.75rem;
+    }
   }
   &__icono-cpy {
     width: 25px;
@@ -69,6 +87,9 @@ footer {
   }
   &__link {
     color: blue;
+    @include w430 () {
+      font-size: 0.75rem;
+    }
   }
 }
 

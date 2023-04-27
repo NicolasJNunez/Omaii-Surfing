@@ -5,6 +5,9 @@
   left: 95.5%;
   margin: 20px;
   transition: 0.3s ease;
+  @include w650 () {
+    width: 40px;
+  }
   &:hover {
     width: 65px;
     }

@@ -9,6 +9,9 @@
   justify-content: center;
   align-items: center;
   background-color: white;
+  @include w430 () {
+    width: 230px;
+  }
   &__body {
     font-size: 1.2rem;
     gap: 20px;
@@ -43,24 +46,39 @@
     width: 290px;
     height: 275px;
     transition: 0.3s ease;
+    @include w430 () {
+      width: 210px;
+      height: 180px;
+    }
   }
   &__img-quillon:hover {
     width: 305px;
     height: 290px;
+    @include w430 () {
+      width: 220px;
+      height: 190px;
+    }
   }
   &__img-leash {
     width: 240px;
     height: 275px;
     transition: 0.3s ease;
+    @include w430 () {
+      width: 170px;
+      height: 215px;
+    }
   }
   &__img-leash:hover {
     width: 255px;
     height: 290px;
+    @include w430 () {
+      width: 190px;
+      height: 230px;
+    }
   }
   &__span {
     text-decoration: line-through;
   }
-  
 }
 
 

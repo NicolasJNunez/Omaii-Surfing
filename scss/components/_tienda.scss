@@ -4,23 +4,44 @@
   grid-template-rows: repeat(2, 600px);
   column-gap: 200px;
   margin-bottom: 70px;
+  @include w860 () {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    gap: 100px;
+  }
+  @include w720 () {
+    padding: 3em;
+  }
   &__celda-neopreno {
     display: flex;
     justify-content: end;
     align-items: center;
+    @include w860 () {
+      justify-content: center;
+    }
   }
   &__celda-tabla {
     display: flex;
     align-items: center;
+    @include w860 () {
+      justify-content: center;
+    }
   }
   &__celda-quillon {
     display: flex;
     justify-content: end;
     align-items: center;
+    @include w860 () {
+      justify-content: center;
+    }
   }
   &__celda-leash {
     display: flex;
     align-items: center;
+    @include w860 () {
+      justify-content: center;
+    }
   }
   &--seccion {
     @extend .grilla-productos;
