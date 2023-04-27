@@ -146,7 +146,7 @@ input {
 
 @mixin minw879 {
   @media (min-width:879px) {
-    @content
+    @content;
   }
 }
 
