@@ -61,12 +61,12 @@ footer {
     }
   }
   &__linea-izq {
-    border-top: black 0.1px solid;
+    border-top: $color-negro 0.1px solid;
     grid-column: 1/2;
     grid-row: 2;
   }
   &__linea-der {
-    border-top: black 0.1px solid;
+    border-top: $color-negro 0.1px solid;
     grid-column: 3/4;
     grid-row: 2;
   }
@@ -79,7 +79,7 @@ footer {
     margin-top: 20px;
   }
   &__logo {
-    font-family: 'Caveat', cursive;
+    font-family: $tipo-caveat;
     font-size: 3rem;
     @include w660 () {
       font-size: 2.5rem;

@@ -1,14 +1,14 @@
 .tarjeta {
   width: 300px;
   height: 445px;
-  border: 2px solid black;
+  border: 2px solid $color-negro;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: $color-blanco;
   @include w430 () {
     width: 230px;
   }

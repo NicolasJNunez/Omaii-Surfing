@@ -1,8 +1,8 @@
 .btn {
-  background-color: gray;
-  border: 2px solid black;
+  background-color: $color-gris-puro;
+  border: 2px solid $color-negro;
   border-radius: 30px;
-  color: white;
+  color: $color-blanco;
   font-size: 0.98rem;
   padding: 0.4em 0.7em;
   transition: 0.2s ease;
@@ -11,8 +11,8 @@
     font-size: 0.8rem;
   }
   &:hover {
-    background-color: white;
-    color: gray;
+    background-color: $color-blanco;
+    color: $color-gris-puro;
     font-size: 1.1rem;
     @include w660 () {
       font-size: 0.9rem;

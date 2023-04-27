@@ -1,22 +1,28 @@
 $shadow-inset: rgba(0, 0, 0, 0.37);
 $text-shadow: rgba(0, 0, 0, 0.575);
+$text-shadow-compl: 0 1px 5px rgba(0, 0, 0, 0.575);
 $color-blanco: rgb(255, 255, 255);
 $color-negro: rgb(0, 0, 0);
+$color-gris-claro: rgba(255, 255, 255, 0.781);
 $color-gris: rgba(75, 75, 75, 0.637);
+$color-gris-puro: rgb(128, 128, 128);
 $color-verde: rgb(37, 70, 66);
 $color-rojo: rgb(255, 0, 0);
+$tipo-overlock: 'Overlock', cursive;
+$tipo-baloo: 'Baloo Tamma 2', cursive;
+$tipo-caveat: 'Caveat', cursive;
+$tipo-merri: 'Merriweather Sans', sans-serif;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-weight: normal;
-  text-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
 
 a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.781);
+  color: $color-gris-claro;
 }
 
 ul, ol {

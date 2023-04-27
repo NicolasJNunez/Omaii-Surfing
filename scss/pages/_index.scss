@@ -24,7 +24,7 @@
     color: $color-blanco;
     font-size: 4rem;
     font-weight: 900;
-    font-family: 'Caveat', cursive;
+    font-family: $tipo-caveat;
     transition: 0.5s ease;
     text-shadow: 1px 5px 10px $text-shadow;
     @include w420 () {
@@ -76,7 +76,7 @@
     gap: 20px;
     font-size: 1.3rem;
     font-weight: bold;
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: $tipo-merri;
     text-shadow: 0 10px 10px $text-shadow;
     @include w370 () {
       align-items: center;
@@ -114,7 +114,7 @@
     font-weight: lighter;
     font-size: 1.1rem;
     color: rgba(255, 255, 255, 0.774);
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: $tipo-baloo;
     text-shadow: 0 0 5px $color-negro;
     @include w1024 () {
       font-size: 0.9rem;
@@ -128,8 +128,8 @@
     font-size: 2.5rem;
     font-weight: lighter;
     color: $color-blanco;
-    font-family: 'Overlock', cursive;
-    text-shadow: 0 1px 5px $text-shadow;
+    font-family: $tipo-overlock;
+    text-shadow: $text-shadow-compl;
     @include w1024 () {
       font-size: 2rem;
     }
@@ -143,7 +143,7 @@
   &__strong-desktop {
     font-size: 3rem;
     font-weight: bold;
-    text-shadow: 0 1px 5px $text-shadow;
+    text-shadow: $text-shadow-compl;
     @include w1024 () {
       font-size: 2.5rem;
     }
@@ -153,9 +153,9 @@
   }
   &__slogan-mobile {
     display: none;
-    font-family: 'Overlock', cursive;
+    font-family: $tipo-overlock;
     font-weight: bold;
-    text-shadow: 0 1px 5px $text-shadow;
+    text-shadow: $text-shadow-compl;
     @include w650 () {
       display: flex;
       flex-direction: column;
@@ -168,7 +168,7 @@
     }
   }
   &__span-mobile {
-    text-shadow: 0 1px 5px $text-shadow;
+    text-shadow: $text-shadow-compl;
     font-size: 2rem;
   }
   &__video {
@@ -191,7 +191,7 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  font-family: 'Baloo Tamma 2', cursive;
+  font-family: $tipo-baloo;
   @include w800 () {
     padding: 6em;
     gap: 20px;
