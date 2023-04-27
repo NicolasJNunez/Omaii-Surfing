@@ -107,7 +107,8 @@ footer {
     gap: 20px;
   }
   &__link {
-    color: blue;
+    color: $color-azul;
+    text-decoration: underline $color-azul;
     @include w430 () {
       font-size: 0.75rem;
     }

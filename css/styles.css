@@ -399,7 +399,8 @@ footer {
   gap: 20px;
 }
 .footer__link {
-  color: blue;
+  color: rgb(0, 0, 255);
+  text-decoration: underline rgb(0, 0, 255);
 }
 @media (max-width: 430px) {
   .footer__link {
