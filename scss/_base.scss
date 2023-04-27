@@ -144,6 +144,12 @@ input {
   }
 }
 
+@mixin minw879 {
+  @media (min-width:879px) {
+    @content
+  }
+}
+
 @mixin w860 {
   @media (max-width:860px) {
     @content;

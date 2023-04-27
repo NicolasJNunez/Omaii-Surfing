@@ -1470,6 +1470,9 @@ footer {
     transform: scale(1);
   }
 }
+.clases__cont-btn {
+  margin-bottom: 20px;
+}
 .clases__precios {
   font-size: 1.4rem;
   display: flex;
@@ -1492,6 +1495,11 @@ footer {
 @media (max-width: 879px) {
   .clases__precios {
     margin-top: -17.5px;
+  }
+}
+@media (min-width: 879px) {
+  .clases__cont-divisor {
+    display: none;
   }
 }
 @media (max-width: 879px) {
