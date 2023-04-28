@@ -101,14 +101,13 @@ footer {
   }
   &__cont-links {
     margin-top: 10px;
-    text-decoration: underline;
+    text-decoration: underline $color-azul;
     display: flex;
     justify-content: center;
     gap: 20px;
   }
   &__link {
     color: $color-azul;
-    text-decoration: underline $color-azul;
     @include w430 () {
       font-size: 0.75rem;
     }
