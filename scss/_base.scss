@@ -58,7 +58,7 @@ input {
   font-weight: inherit;
 }
 
-// Media Queries
+// Media Queries - Max Width
 
 @mixin w1726 {
   @media (max-width:1726px) {
@@ -84,21 +84,9 @@ input {
   }
 }
 
-@mixin minw1460 {
-  @media (min-width:1460px) {
-    @content;
-  }
-}
-
 @mixin w1377 {
   @media (max-width:1377px) {
     @content;
-  }
-}
-
-@mixin minw1377 {
-  @media (min-width:1377px) {
-    @content
   }
 }
 
@@ -152,12 +140,6 @@ input {
 
 @mixin w879 {
   @media (max-width:879px) {
-    @content;
-  }
-}
-
-@mixin minw879 {
-  @media (min-width:879px) {
     @content;
   }
 }
@@ -312,3 +294,23 @@ input {
   }
 }
 
+// Media Queries - Min width
+
+@mixin minw879 {
+  @media (min-width:879px) {
+    @content;
+  }
+}
+
+@mixin minw1460 {
+  @media (min-width:1460px) {
+    @content;
+  }
+}
+
+
+@mixin minw1377 {
+  @media (min-width:1377px) {
+    @content
+  }
+}
