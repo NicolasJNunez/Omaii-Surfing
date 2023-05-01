@@ -1,7 +1,5 @@
 #Mi nombre es Nicolás, ¡Hola!
 
-![] https://cdn-icons-png.flaticon.com/512/1476/1476243.png ![]
-
 En CoderHouse, trabajé en este proyecto de desarrollo web. Es mi primer proyecto en este campo y consiste en la creación de una página web para escritorio y móvil.
 
 El objetivo principal de este proyecto es aplicar lo aprendido en el curso. En este repositorio, estoy implementando lo aprendido en HTML, CSS, SASS y lo básico en SEO.
