@@ -1,4 +1,4 @@
-#Mi nombre es Nicolás, ¡Hola!#
+Mi nombre es Nicolás, ¡Hola!
 
 En CoderHouse, trabajé en este proyecto de desarrollo web. Es mi primer proyecto en este campo y consiste en la creación de una página web para escritorio y móvil.
 
