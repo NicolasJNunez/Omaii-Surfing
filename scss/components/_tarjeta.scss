@@ -32,6 +32,7 @@
   &__img-neoprene:hover {
     width: 295px;
     height: 290px;
+    filter: brightness(200%);
   }
   &__img-tablablanca {
     width: 200px;
@@ -41,6 +42,7 @@
   &__img-tablablanca:hover {
     width: 215px;
     height: 290px;
+    filter: brightness(104%);
   }
   &__img-quillon {
     width: 290px;
@@ -54,6 +56,7 @@
   &__img-quillon:hover {
     width: 305px;
     height: 290px;
+    filter: brightness(110%);
     @include w430 () {
       width: 220px;
       height: 190px;
@@ -71,6 +74,7 @@
   &__img-leash:hover {
     width: 255px;
     height: 290px;
+    filter: brightness(200%);
     @include w430 () {
       width: 190px;
       height: 230px;

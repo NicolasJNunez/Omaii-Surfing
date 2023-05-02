@@ -166,6 +166,7 @@ input {
 .tarjeta__img-neoprene:hover {
   width: 295px;
   height: 290px;
+  filter: brightness(200%);
 }
 .tarjeta__img-tablablanca {
   width: 200px;
@@ -175,6 +176,7 @@ input {
 .tarjeta__img-tablablanca:hover {
   width: 215px;
   height: 290px;
+  filter: brightness(104%);
 }
 .tarjeta__img-quillon {
   width: 290px;
@@ -190,6 +192,7 @@ input {
 .tarjeta__img-quillon:hover {
   width: 305px;
   height: 290px;
+  filter: brightness(110%);
 }
 @media (max-width: 430px) {
   .tarjeta__img-quillon:hover {
@@ -211,6 +214,7 @@ input {
 .tarjeta__img-leash:hover {
   width: 255px;
   height: 290px;
+  filter: brightness(200%);
 }
 @media (max-width: 430px) {
   .tarjeta__img-leash:hover {

@@ -8,6 +8,7 @@
   <meta name="description" content="Descubrí nuestra selección de equipos y accesorios de surf en la tienda en línea de O'maii. Encontrá las mejores marcas y productos para mejorar tu experiencia en el agua. ¡Hacé tu pedido ahora y viví la pasión del surf con O'maii en Mar del Plata!">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="icon" href="../img/omaii-icono.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
   <title>Productos de Surf | O'maii Surfing</title>
 </head>
@@ -35,7 +36,8 @@
   </header>
   
   <main class="productos">
-    <section class="productos__formulario">
+    <section class="productos__formulario" data-aos="fade-right" data-aos-duration="3000"
+    data-aos-delay="300">
       <h2 class="productos__titulo">Filtrar por:</h2>
       <hr class="productos__hr-filtrar">
       <form action="" class="productos__form-categoria">
@@ -113,7 +115,9 @@
     </section>
     <div>
       <form action="" class="productos__form-orden">
-        <div>
+        <div data-aos="fade-zoom-in"
+        data-aos-duration="1000"
+        data-aos-delay="300">
           <label class="productos__label-orden" for="orden">Ordenar por:</label>
           <select name="orden" id="orden">
             <option value="0">-</option>
@@ -124,7 +128,9 @@
           </select>
         </div>
       </form>
-      <div class="grilla-productos--seccion">
+      <div class="grilla-productos--seccion" data-aos="fade-zoom-in"
+      data-aos-duration="1000"
+      data-aos-delay="300">
         <div class="celda-neoprene">
           <article class="tarjeta">
             <img src="../img/trajedeneoprene.jpg" alt="traje de neopreno" class="tarjeta__img-neoprene">
@@ -208,7 +214,10 @@
       <a class="footer__link" href="about:blank" target="_blank">Preguntas frecuentes</a>
     </div>
   </footer>
-  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
