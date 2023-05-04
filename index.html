@@ -172,7 +172,10 @@
       </div>
     </div>
     
-    <form action="" class="form">
+    <!-- Action: Escribir la ruta del archivo php -->
+    <!-- Method: POST (interactuamos a traves del protocolo HTTP para mandar y recibir informacion. El usuario envia la informacion del formulario al servidor y luego el servidor nos la manda a nuestro mail) -->
+    
+    <form action="form.php" method="post" class="form">
       <label for="campo-de-mensaje">Escribinos un mensaje</label>
       <div>
         <label for="asunto">Asunto</label>
@@ -184,9 +187,10 @@
         </select>
       </div>
       <div>
+        <!-- el atributo "name" es el que se requiere para guardar en variables la informacion del usuario en el archivo php -->
         <textarea name="campo-de-mensaje" id="campo-de-mensaje" cols="30" rows="10"></textarea>
       </div>
-      <button class="form__btn">Enviar</button>
+      <input type="submit" class="form__btn"></input>
     </form>
     <div class="footer__cont-links">
       <a class="footer__link" href="about:blank" target="_blank">Empleos</a>
