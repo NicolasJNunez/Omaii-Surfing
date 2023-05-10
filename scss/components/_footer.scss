@@ -1,3 +1,7 @@
+@mixin footer-line {
+  border-top: rgb(0, 0, 0) 0.1px solid;
+}
+
 footer {
   margin-bottom: 20px;
 }
@@ -49,24 +53,24 @@ footer {
     }
   }
   &__icono-twitter {
-    width: 50px;
+    width: 49px;
     @include w430 () {
-      width: 42.5px;
+      width: 41.5px;
     }
   }
   &__icono-telefono {
-    width: 40px;
+    width: 48px;
     @include w430 () {
-      width: 35px;
+      width: 41px;
     }
   }
   &__linea-izq {
-    border-top: $color-negro 0.1px solid;
+    @include footer-line ();
     grid-column: 1/2;
     grid-row: 2;
   }
   &__linea-der {
-    border-top: $color-negro 0.1px solid;
+    @include footer-line ();
     grid-column: 3/4;
     grid-row: 2;
   }

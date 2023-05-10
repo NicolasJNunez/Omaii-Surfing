@@ -340,19 +340,19 @@ footer {
   }
 }
 .footer__icono-twitter {
-  width: 50px;
+  width: 49px;
 }
 @media (max-width: 430px) {
   .footer__icono-twitter {
-    width: 42.5px;
+    width: 41.5px;
   }
 }
 .footer__icono-telefono {
-  width: 40px;
+  width: 48px;
 }
 @media (max-width: 430px) {
   .footer__icono-telefono {
-    width: 35px;
+    width: 41px;
   }
 }
 .footer__linea-izq {
@@ -652,7 +652,6 @@ footer {
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.774);
   font-family: "Baloo Tamma 2", cursive;
-  text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 @media (max-width: 1024px) {
   .portada__slogan {
@@ -747,20 +746,25 @@ footer {
   gap: 40px;
   font-family: "Baloo Tamma 2", cursive;
 }
+@media (max-width: 1638px) {
+  .about-us {
+    padding: 7em 7em 3em 7em;
+  }
+}
 @media (max-width: 800px) {
   .about-us {
-    padding: 6em;
+    padding: 6em 6em 2.5em 6em;
     gap: 20px;
   }
 }
 @media (max-width: 500px) {
   .about-us {
-    padding: 4em;
+    padding: 4em 4em 1.5em 4em;
   }
 }
 @media (max-width: 390px) {
   .about-us {
-    padding: 2.5em;
+    padding: 2.5em 2.5em 1em 2.5em;
   }
 }
 .about-us__titulo {
@@ -797,7 +801,7 @@ footer {
   text-align: center;
   color: rgba(75, 75, 75, 0.637);
 }
-@media (max-width: 1350px) {
+@media (max-width: 1638px) {
   .about-us__parrafo {
     font-size: 1.7rem;
   }
