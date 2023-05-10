@@ -147,7 +147,7 @@
   &__label-orden {
     margin-right: 5px;
     @include w924 () {
-      font-weight: bold;
+      @include text-inset-shadow ();
     }
     @include w336 () {
       font-size: 1.2rem;

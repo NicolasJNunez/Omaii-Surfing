@@ -58,6 +58,16 @@ input {
   font-weight: inherit;
 }
 
+@mixin text-inset-shadow {
+  font-weight: bold;
+  background-color: #000;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
 // Media Queries - Max Width
 
 @mixin w1726 {

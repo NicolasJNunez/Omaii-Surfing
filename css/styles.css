@@ -1347,6 +1347,7 @@ footer {
 .clases__titulo {
   text-decoration: underline;
   margin-bottom: 50px;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 @media (max-width: 1460px) {
   .clases__titulo {
@@ -1363,6 +1364,15 @@ footer {
     text-align: center;
     margin-top: 20px;
   }
+}
+.clases__subtitulo {
+  font-weight: bold;
+  background-color: #000;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
 }
 .clases__cont-art {
   display: flex;
@@ -1727,6 +1737,12 @@ footer {
 @media (max-width: 924px) {
   .productos__label-orden {
     font-weight: bold;
+    background-color: #000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
   }
 }
 @media (max-width: 336px) {
