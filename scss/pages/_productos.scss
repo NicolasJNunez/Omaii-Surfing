@@ -158,11 +158,11 @@
 }
 &__select-precio {
   width: 50px;
-  margin-left: 1px;
+  @include margin-inputs-productos ();
   @include style-inputs ();
 }
 &__input-talle {
-  margin-left: 2px;
+  @include margin-inputs-productos ();
   @include style-inputs ();
 }
 }

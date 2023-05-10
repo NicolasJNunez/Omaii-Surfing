@@ -85,6 +85,10 @@ input {
   border-top: rgb(0, 0, 0) 0.1px solid;
 }
 
+@mixin margin-inputs-productos {
+  margin-left: 2px;
+}
+
 ::-webkit-scrollbar {
   width: 0.7em;
 }
