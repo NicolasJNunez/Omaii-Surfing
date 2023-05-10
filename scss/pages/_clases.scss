@@ -14,11 +14,12 @@
     padding: 1em .5em;
   }
   &__titulo {
-    text-decoration: underline;
     margin-bottom: 50px;
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                0px -5px 35px rgba(255,255,255,0.3);
-
+    font-weight: bold;
+    padding: .2em;
+    width: fit-content;
+    @include text-inset-shadow ();
+    box-shadow: hsla(0, 0%, 15%) 5px 5px, hsla(0, 0%, 15%, .6) 10px 10px, hsla(0, 0%, 15%, .5) 15px 15px, hsla(0, 0%, 15%, .4) 20px 20px, hsla(0, 0%, 15%, .3) 25px 25px;
     @include w1460 () {
       font-size: 2.5rem;
     }
@@ -26,8 +27,15 @@
       font-size: 2rem;
     }
     @include w879 () {
+      font-size: 2.4rem;
+      width: unset;
+      padding: 0;
+      box-shadow: none;
       text-align: center;
       margin-top: 20px;
+    }
+    @include w478 () {
+      font-size: 2rem
     }
   }
   &__subtitulo {

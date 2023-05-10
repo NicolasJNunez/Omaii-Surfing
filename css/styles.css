@@ -1202,6 +1202,7 @@ footer {
   font-weight: bold;
   font-size: 5rem;
   padding: 1em;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1200px) {
   .surf__titulo {
@@ -1369,9 +1370,18 @@ footer {
   }
 }
 .clases__titulo {
-  text-decoration: underline;
   margin-bottom: 50px;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  padding: 0.2em;
+  width: fit-content;
+  font-weight: bold;
+  background-color: #000;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+  box-shadow: hsl(0, 0%, 15%) 5px 5px, hsla(0, 0%, 15%, 0.6) 10px 10px, hsla(0, 0%, 15%, 0.5) 15px 15px, hsla(0, 0%, 15%, 0.4) 20px 20px, hsla(0, 0%, 15%, 0.3) 25px 25px;
 }
 @media (max-width: 1460px) {
   .clases__titulo {
@@ -1385,8 +1395,17 @@ footer {
 }
 @media (max-width: 879px) {
   .clases__titulo {
+    font-size: 2.4rem;
+    width: unset;
+    padding: 0;
+    box-shadow: none;
     text-align: center;
     margin-top: 20px;
+  }
+}
+@media (max-width: 478px) {
+  .clases__titulo {
+    font-size: 2rem;
   }
 }
 .clases__subtitulo {
