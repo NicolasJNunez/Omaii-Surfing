@@ -11,9 +11,28 @@
     padding: .5em;
   }
   @include w879 () {
+    padding: 1em 5em;
+  }
+  @include w800 () {
+    padding: 1em 4em;
+  }
+  @include w725 () {
+    padding: 1em 3em;
+  }
+  @include w650 () {
+    padding: 1em 2em;
+  }
+  @include w560 () {
+    padding: 1em 1em;
+  }
+  @include w396 () {
+    padding: 1em .7em;
+  }
+  @include w355 () {
     padding: 1em .5em;
   }
   &__titulo {
+    font-size: 2.75rem;
     margin-bottom: 50px;
     font-weight: bold;
     padding: .2em;
@@ -28,6 +47,7 @@
     }
     @include w879 () {
       font-size: 2.4rem;
+      border-bottom: 2px solid black;
       width: unset;
       padding: 0;
       box-shadow: none;
