@@ -1466,6 +1466,7 @@ footer {
   align-items: center;
   font-size: 1.5rem;
   gap: 20px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.377);
 }
 @media (max-width: 1460px) {
   .clases__tabla-alquiler {
@@ -1498,6 +1499,7 @@ footer {
   align-items: center;
   gap: 20px;
   font-size: 1.9rem;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.377);
 }
 @media (max-width: 1460px) {
   .clases__horario {
@@ -1532,7 +1534,12 @@ footer {
 }
 .clases__input {
   font-size: 1.4rem;
-  padding: 0.1em;
+  padding: 0.3em;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1460px) {
   .clases__input {
@@ -1582,6 +1589,7 @@ footer {
   align-items: center;
   gap: 15px;
   border-radius: 20px;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.377);
 }
 @media (max-width: 1460px) {
   .clases__precios {
@@ -1746,6 +1754,14 @@ footer {
     font-size: 1.3rem;
   }
 }
+.productos__input-orden {
+  padding: 0.3em;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
 @media (max-width: 1377px) {
   .productos__hr-filtrar {
     order: 3;
@@ -1827,6 +1843,22 @@ footer {
 }
 .productos__select-precio {
   width: 50px;
+  margin-left: 1px;
+  padding: 0.3em;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.productos__input-talle {
+  margin-left: 2px;
+  padding: 0.3em;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .celda-neoprene {

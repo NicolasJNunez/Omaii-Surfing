@@ -58,6 +58,19 @@ input {
   font-weight: inherit;
 }
 
+@mixin style-inputs {
+  padding: .3em;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+}
+
+@mixin text-shadow-normal {
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.377);
+}
+
 @mixin text-inset-shadow {
   font-weight: bold;
   background-color: #000;

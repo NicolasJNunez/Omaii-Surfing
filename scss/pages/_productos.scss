@@ -96,6 +96,9 @@
       font-size: 1.3rem;
     }
   }
+  &__input-orden {
+    @include style-inputs ();
+  }
   &__hr-filtrar {
     @include w1377 () {
       order: 3;
@@ -155,6 +158,12 @@
 }
 &__select-precio {
   width: 50px;
+  margin-left: 1px;
+  @include style-inputs ();
+}
+&__input-talle {
+  margin-left: 2px;
+  @include style-inputs ();
 }
 }
 
