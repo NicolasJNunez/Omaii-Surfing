@@ -1,6 +1,6 @@
 .tarjeta {
   width: 300px;
-  height: 445px;
+  height: 455px;
   border: 2px solid $color-negro;
   border-radius: 20px;
   overflow: hidden;
@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   background-color: $color-blanco;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   @include w430 () {
     width: 230px;
   }
@@ -23,6 +24,7 @@
   }
   &__titulo {
     font-size: 1.2rem;
+    font-weight: bold;
   }
   &__img-neoprene {
     width: 280px;
@@ -33,6 +35,7 @@
     width: 295px;
     height: 290px;
     filter: brightness(200%);
+    cursor: zoom-in;
   }
   &__img-tablablanca {
     width: 200px;
@@ -43,6 +46,7 @@
     width: 215px;
     height: 290px;
     filter: brightness(104%);
+    cursor: zoom-in;
   }
   &__img-quillon {
     width: 290px;
@@ -57,6 +61,7 @@
     width: 305px;
     height: 290px;
     filter: brightness(110%);
+    cursor: zoom-in;
     @include w430 () {
       width: 220px;
       height: 190px;
@@ -75,6 +80,7 @@
     width: 255px;
     height: 290px;
     filter: brightness(200%);
+    cursor: zoom-in;
     @include w430 () {
       width: 190px;
       height: 230px;

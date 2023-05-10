@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Descubrí nuestra selección de equipos y accesorios de surf en la tienda en línea de O'maii. Encontrá las mejores marcas y productos para mejorar tu experiencia en el agua. ¡Hacé tu pedido ahora y viví la pasión del surf con O'maii en Mar del Plata!">
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
   <link rel="icon" href="../img/omaii-icono.ico">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
@@ -133,7 +134,7 @@
       data-aos-delay="300">
         <div class="celda-neoprene">
           <article class="tarjeta">
-            <img src="../img/trajedeneoprene.jpg" alt="traje de neopreno" class="tarjeta__img-neoprene">
+            <a href="../img/trajedeneoprene.jpg" data-lightbox="surf-productos" data-title="Traje de neoprene"><img src="../img/trajedeneoprene.jpg" alt="traje de neopreno" class="tarjeta__img-neoprene"></a>
             <div class="tarjeta__body">
               <h3 class="tarjeta__titulo">Traje de neoprene</h3>
               <span><span class="tarjeta__span">$15000</span> $7000</span>
@@ -142,7 +143,7 @@
           </article>
         </div>
         <article class="tarjeta">
-          <img src="../img/tabla-blanca.png" alt="tabla blanca" class="tarjeta__img-tablablanca">
+          <a href="../img/tabla-blanca.png" data-lightbox="surf-productos" data-title="Tabla de Surf"><img src="../img/tabla-blanca.png" alt="tabla blanca" class="tarjeta__img-tablablanca"></a>
           <div class="tarjeta__body">
             <h3 class="tarjeta__titulo">Tabla de Surf</h3>
             <span><span class="tarjeta__span">$40000</span> $30000</span>
@@ -151,7 +152,7 @@
         </article>
         <div class="celda-quillon">
           <article class="tarjeta">
-            <img src="../img/quillon.jpg" alt="quillon" class="tarjeta__img-quillon">
+            <a href="../img/quillon.jpg" data-lightbox="surf-productos" data-title="Quillón"><img src="../img/quillon.jpg" alt="quillon" class="tarjeta__img-quillon"></a>
             <div class="tarjeta__body">
               <h3 class="tarjeta__titulo">Quillón</h3>
               <span><span class="tarjeta__span">$7000</span> $5000</span>
@@ -160,7 +161,7 @@
           </article>
         </div>
         <article class="tarjeta">
-          <img src="../img/leash.jpg" alt="leash" class="tarjeta__img-leash">
+          <a href="../img/leash.jpg"  data-lightbox="surf-productos" data-title="Leash"><img src="../img/leash.jpg" alt="leash" class="tarjeta__img-leash"></a>
           <div class="tarjeta__body">
             <h3 class="tarjeta__titulo">Leash</h3>
             <span><span class="tarjeta__span">$5000</span> $2500</span>
@@ -214,6 +215,8 @@
       <a class="footer__link" href="about:blank" target="_blank">Preguntas frecuentes</a>
     </div>
   </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
