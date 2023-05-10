@@ -72,6 +72,24 @@ input {
   border-top: rgb(0, 0, 0) 0.1px solid;
 }
 
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(black, grey);
+  border: .15em solid hsl(0, 0%, 80%);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 9%);
+}
+
 // Media Queries - Max Width
 
 @mixin w1726 {
