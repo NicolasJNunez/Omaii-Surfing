@@ -45,17 +45,17 @@ input {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(0, 0%, 80%);
+  background: rgb(204, 204, 204);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(black, grey);
-  border: 0.15em solid hsl(0, 0%, 80%);
+  background: linear-gradient(rgb(0, 0, 0), rgb(128, 128, 128));
+  border: 0.15em solid rgb(204, 204, 204);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 0%, 9%);
+  background: rgb(23, 23, 23);
 }
 
 .header__item {
@@ -380,12 +380,12 @@ footer {
   }
 }
 .footer__linea-izq {
-  border-top: rgb(0, 0, 0) 0.1px solid;
+  border-top: 0.1px solid;
   grid-column: 1/2;
   grid-row: 2;
 }
 .footer__linea-der {
-  border-top: rgb(0, 0, 0) 0.1px solid;
+  border-top: 0.1px solid;
   grid-column: 3/4;
   grid-row: 2;
 }
@@ -1406,7 +1406,7 @@ footer {
   padding: 0.2em;
   width: fit-content;
   font-weight: bold;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -1442,7 +1442,7 @@ footer {
 }
 .clases__subtitulo {
   font-weight: bold;
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -1538,7 +1538,7 @@ footer {
   border: none;
   outline: none;
   border-radius: 15px;
-  background-color: #ccc;
+  background-color: rgb(204, 204, 204);
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1460px) {
@@ -1759,7 +1759,7 @@ footer {
   border: none;
   outline: none;
   border-radius: 15px;
-  background-color: #ccc;
+  background-color: rgb(204, 204, 204);
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1377px) {
@@ -1828,7 +1828,7 @@ footer {
 @media (max-width: 924px) {
   .productos__label-orden {
     font-weight: bold;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
@@ -1841,24 +1841,17 @@ footer {
     font-size: 1.2rem;
   }
 }
-.productos__select-precio {
-  width: 50px;
+.productos__input-talle, .productos__select-precio {
   margin-left: 2px;
   padding: 0.3em;
   border: none;
   outline: none;
   border-radius: 15px;
-  background-color: #ccc;
+  background-color: rgb(204, 204, 204);
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.productos__input-talle {
-  margin-left: 2px;
-  padding: 0.3em;
-  border: none;
-  outline: none;
-  border-radius: 15px;
-  background-color: #ccc;
-  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+.productos__select-precio {
+  width: 50px;
 }
 
 .celda-neoprene {

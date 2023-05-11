@@ -156,14 +156,13 @@
       font-size: 1.2rem;
     }
 }
-&__select-precio {
-  width: 50px;
-  @include margin-inputs-productos ();
-  @include style-inputs ();
-}
 &__input-talle {
   @include margin-inputs-productos ();
   @include style-inputs ();
+}
+&__select-precio {
+  @extend .productos__input-talle;
+  width: 50px;
 }
 }
 

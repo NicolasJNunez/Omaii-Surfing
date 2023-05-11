@@ -6,6 +6,7 @@ $color-negro: rgb(0, 0, 0);
 $color-gris-claro: rgba(255, 255, 255, 0.781);
 $color-gris: rgba(75, 75, 75, 0.637);
 $color-gris-puro: rgb(128, 128, 128);
+$color-input-y-scrollbar: rgb(204, 204, 204);
 $color-verde: rgb(37, 70, 66);
 $color-rojo: rgb(255, 0, 0);
 $color-azul: rgb(0, 0, 255);
@@ -63,7 +64,7 @@ input {
   border: none;
   outline: none;
   border-radius: 15px;
-  background-color: #ccc;
+  background-color: $color-input-y-scrollbar;
   box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
 }
 
@@ -73,7 +74,7 @@ input {
 
 @mixin text-inset-shadow {
   font-weight: bold;
-  background-color: #000;
+  background-color: $color-negro;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -82,7 +83,7 @@ input {
 }
 
 @mixin footer-line {
-  border-top: rgb(0, 0, 0) 0.1px solid;
+  border-top: 0.1px solid;
 }
 
 @mixin margin-inputs-productos {
@@ -94,17 +95,17 @@ input {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(0, 0%, 80%);
+  background: $color-input-y-scrollbar;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(black, grey);
-  border: .15em solid hsl(0, 0%, 80%);
+  background: linear-gradient($color-negro, rgb(128, 128, 128));
+  border: .15em solid rgb(204, 204, 204);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(0, 0%, 9%);
+  background: rgb(23, 23, 23);
 }
 
 // Media Queries - Max Width
