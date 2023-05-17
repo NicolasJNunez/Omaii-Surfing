@@ -1,6 +1,6 @@
 # Mi nombre es Nicolás, ¡Hola!
 
-En CoderHouse, trabajé en este proyecto de desarrollo web. Es mi primer proyecto en este campo y consiste en la creación de una página web para escritorio y móvil.
+En CoderHouse, trabajé en este proyecto de desarrollo web. Es mi primer proyecto en este campo y consiste en la creación de una página web con una temática de Surf hecha para escritorio y móvil.
 
 El objetivo principal de este proyecto es aplicar lo aprendido en el curso. En este repositorio, estoy implementando lo aprendido en HTML, CSS, SASS y lo básico en SEO.
 
