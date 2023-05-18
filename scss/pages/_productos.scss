@@ -1,0 +1,175 @@
+.productos {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding: 10em;
+  background-image: url("../img/camionetita.jpg");
+  background-position: center;
+  background-size: cover;
+  @include w1377 () {
+    flex-direction: column;
+    padding: 5em;
+  }
+  @include w924 () {
+    padding: 5em 2.5em;
+  }
+  &__titulo {
+    @include w1377 () {
+      display: none;
+    }
+  }
+  &__formulario {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    font-size: 1.2rem;
+    background-color: $color-gris-claro;
+    padding: 1.6em;
+    border-radius: 20px;
+    height: fit-content;
+    align-self: center;
+    @include w1377 () {
+      font-size: .85rem;
+      flex-direction: row;
+      width: fit-content;
+    }
+    @include w1250 () {
+      gap: 20px;
+    }
+      @include w688 () {
+      display: grid;
+      grid-template-columns: 125px 161px;
+      grid-template-rows: 189px 1px 70px;
+    }
+      @include w442 () {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__form-categoria {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    @include w1377 () {
+      justify-content: center;
+      order: 2;
+    }
+    @include w688 () {
+      justify-content: start;
+    }
+  }
+  &__form-marca {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    @include w1377 () {
+      flex-direction: row;
+    }
+  }
+  &__cont-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include w1377 () {
+      order: 1;
+    }
+    @include w688 () {
+      align-self: center;
+  }
+  }
+  &__form-orden {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px 20px 0;
+    @include w1377 () {
+      margin-top: 15px;
+      margin-right: 80px;
+    }
+    @include w1250 () {
+      margin-right: 50px;
+  }
+      @include w924 () {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;
+      font-size: 1.3rem;
+    }
+  }
+  &__input-orden {
+    @include style-inputs ();
+  }
+  &__hr-filtrar {
+    @include w1377 () {
+      order: 3;
+    }
+  }
+  &__hr-precio {
+    @include w688 () {
+      display: none;
+    }
+    @include w442 () {
+      display: block;
+      order: 3;
+    }
+  }
+  &__hr-category {
+    @include w1377 () {
+      order: 4;
+    }
+    @include w688 () {
+      order: 3;
+    }
+    @include w442 () {
+      order: 1;
+    }
+  } 
+  &__hr-brand {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include w1377 () {
+      display: none;
+    }
+  }
+  &__cont-precio {
+    margin-bottom: 20px;
+    @include w1377 () {
+      margin: 0;
+      align-self: center;
+      order: 3;
+    }
+}
+  &__cont-talle {
+    margin-top: 20px;
+    @include w1377 () {
+      margin: 0;
+      align-self: center;
+      order: 4;
+    }
+}
+  &__label-orden {
+    margin-right: 5px;
+    @include w924 () {
+      @include text-inset-shadow ();
+    }
+    @include w336 () {
+      font-size: 1.2rem;
+    }
+}
+&__input-talle {
+  @include margin-inputs-productos ();
+  @include style-inputs ();
+}
+&__select-precio {
+  @extend .productos__input-talle;
+  width: 50px;
+}
+}
+
+.celda-neoprene {
+  justify-self: end;
+}
+
+.celda-quillon {
+  justify-self: end;
+}

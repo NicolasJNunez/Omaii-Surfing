@@ -1,0 +1,206 @@
+.clases {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  background-image: url("../img/foto-tubo.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 1.5em;
+  margin-bottom: 100px;
+  @include w1024 () {
+    padding: .5em;
+  }
+  @include w879 () {
+    padding: 1em 5em;
+  }
+  @include w800 () {
+    padding: 1em 4em;
+  }
+  @include w725 () {
+    padding: 1em 3em;
+  }
+  @include w650 () {
+    padding: 1em 2em;
+  }
+  @include w560 () {
+    padding: 1em 1em;
+  }
+  @include w396 () {
+    padding: 1em .7em;
+  }
+  @include w355 () {
+    padding: 1em .5em;
+  }
+  &__titulo {
+    font-size: 2.75rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+    padding: .2em;
+    width: fit-content;
+    @include text-inset-shadow ();
+    box-shadow: hsla(0, 0%, 15%) 5px 5px, hsla(0, 0%, 15%, .6) 10px 10px, hsla(0, 0%, 15%, .5) 15px 15px, hsla(0, 0%, 15%, .4) 20px 20px, hsla(0, 0%, 15%, .3) 25px 25px;
+    @include w1460 () {
+      font-size: 2.5rem;
+    }
+    @include w1150 () {
+      font-size: 2rem;
+    }
+    @include w879 () {
+      font-size: 2.4rem;
+      border-bottom: 2px solid black;
+      width: unset;
+      padding: 0;
+      box-shadow: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+    @include w478 () {
+      font-size: 2rem
+    }
+  }
+  &__subtitulo {
+    @include text-inset-shadow ();
+  }
+  &__cont-art {
+    display: flex;
+    justify-content: space-evenly;
+    @include w879 () {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+  &__tabla-alquiler {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 20px;
+    @include text-shadow-normal ();
+    @include w1460 () {
+      font-size: 1.1rem;
+    }
+    @include w1150 () {
+      font-size: 1rem;
+    }
+  }
+  &__celdas {
+    font-size: 1.5rem;
+    padding: 0.4em;
+    @include w1460 () {
+      font-size: 1rem;
+    }
+    @include w1150 () {
+      font-size: 0.9rem;
+    }
+  }
+  &__horario {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.9rem;
+    @include text-shadow-normal ();
+    @include w1460 () {
+      font-size: 1.5rem;
+    }
+    @include w1150 () {
+      font-size: 1.2rem;
+    }
+    @include w879 () {
+      order: -1;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f0f0f080;
+    font-size: 1;
+    padding: 0.5em;
+    border-radius: 30px;
+  }
+  &__dia {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  &__input {
+    font-size: 1.4rem;
+    @include style-inputs ();
+    @include w1460 () {
+      font-size: 1rem;
+    }
+    @include w1150 () {
+      font-size: 0.9rem;
+    }
+  }
+  &__hora {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__rad {
+    display: flex; 
+    gap: 20px;
+    @include w1150 () {
+      gap: 10px;
+    }
+  }
+  &__rad-btn {
+    transform: scale(1.5);
+    @include w1460 () {
+      transform: scale(1.2);
+    }
+    @include w1150 () {
+      transform: scale(1);
+    }
+  }
+  &__cont-btn {
+    margin-bottom: 20px;
+  }
+  &__precios {
+    font-size: 1.4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    @include text-shadow-normal ();
+    @include w1460 () {
+      font-size: 1.1rem;
+    }
+    @include w1150 () {
+      font-size: 1rem;
+    }
+    @include w879 () {
+      margin-top: -17.5px;
+    }
+  }
+  &__cont-divisor {
+    @include minw879 () {
+      display: none
+    }
+    @include w879 () {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__divisor {
+    width: 60%;
+    color: rgba(0, 0, 0, 0.425);
+    @include w478 () {
+      width: 80%;
+    }
+  }
+}
+
+
+
+
+
+

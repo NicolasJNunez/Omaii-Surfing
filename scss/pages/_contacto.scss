@@ -1,0 +1,113 @@
+.contacto {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  border: 2px solid $color-negro;
+  font-size: 1.2rem;
+  padding: 1em;
+  margin: 50px 30% 100px;
+  @include w1726 () {
+    margin: 50px 20% 100px;
+  }
+  @include w1150 () {
+    margin: 50px 10% 100px;
+  }
+  @include w879 () {
+    font-size: 0.9rem;
+  }
+  @include w660 () {
+    font-size: 0.7rem;
+    margin: 25px 10% 100px;
+  }
+  @include w528 () {
+    padding: 3em 1em;
+    margin: 25px 0 40px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  &__titulo {
+    text-decoration: underline;
+  }
+  &__form-inf {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    width: 90%;
+  }
+  &__inp {
+    width: 250px;
+    @include w560 () {
+      width: 200px;
+    }
+    @include w370 () {
+      width: 170px;
+    }
+    @include w336 () {
+      width: 155px;
+    }
+  }
+  &__cont-inic {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  &__genero {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__checkbox {
+    @include w879 () {
+      transform: scale(0.7);
+    }
+  }
+  &__rad {
+    @include w879 () {
+      transform: scale(0.75);
+    }
+  }
+  &__form-inic {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+  &__cont-btn {
+    display: flex;
+    justify-content: center;
+  }
+  &__span {
+    color: $color-rojo;
+  }
+  &__news-wide {
+    @include w420 () {
+      display: none;
+    }
+  }
+  &__news-narrow {
+    @include w336 () {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
