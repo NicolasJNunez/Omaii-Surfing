@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Atención al cliente: ☎ (0223) 555-2211 ¡Aprendé a surfear en Mar del Plata con O'maii! Clases personalizadas con instructores profesionales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Caveat:wght@700&family=Merriweather+Sans:wght@300&family=Open+Sans:wght@300&family=Overlock:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <link rel="icon" href="./img/omaii-icono.ico">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Escuela de Surf | Mar del Plata | O'maii Surfing</title>
+</head>
+
+<body>
+  
+    <header class="portada">
+      <nav class="portada__nav">
+        <div>
+          <h1>
+            <a class="portada__link" href="./index.html" id="logo">O'maii Surfing™</a>
+          </h1>
+        </div>
+        <div class="portada__lists">
+          <ul class="portada__list-usuario">
+            <!-- ⇩ La clase header__item y header__icon se repite en todas las paginas, es por eso que no tiene como nombre de bloque "portada" -->
+            <li class="header__item"><img class="header__icon" src="./img/icono-contacto-blanco.png" alt="icono contacto"><a class="portada__link-usuario" href="./pages/contacto.html">Crear Cuenta</a>
+            </li>
+            <li class="header__item"><img class="header__icon" src="./img/location-icono-blanco.png" alt="icono mapa"><a class="portada__link-usuario" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Donde estamos</a>
+            </li>
+          </ul>
+          <ul class="portada__list-navegacion">
+            <li><a class="portada__link-navegacion" href="./pages/surf.html">Surf</a></li>
+            <li><a class="portada__link-navegacion" href="./pages/clases.html">Clases</a></li>
+            <li><a class="portada__link-navegacion" href="./pages/productos.html">Productos</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+    <div class="portada__texto">
+      <h3 class="portada__slogan">OMAII - CLASES DE SURF, TRABAJO Y SURF, PLAYA Y SURF</h3>
+      <h2 class="portada__slogan-desktop"><strong class="portada__strong-desktop">Buenos momentos</strong> & experiencias inolvidables
+      </h2>
+      <!-- ⇧ visible en resoluciones altas -->
+      <!-- ⇩ visible en resoluciones bajas -->
+      <h2 class="portada__slogan-mobile">Buenos momentos
+      <span class="portada__span-mobile">&</span>
+      <span class="portada__span-mobile">experiencias inolvidables</span></h2>
+    </div>
+    <figure>
+      <video class="portada__video" autoplay muted loop plays-inline src="./videos/videosurf.mp4"></video>
+    </figure>
+  </header>
+  
+  <main>
+    <section data-aos="fade-right" data-aos-duration="1500" class="about-us">
+      <h2 class="about-us__titulo">¿Quienes <strong class="about-us__strong">somos?</strong></h2>
+      <p class="about-us__parrafo">
+        O'maii Surfing nació hace 15 años para dar respuesta a la pasión de muchos niños, jóvenes y padres por el surf.
+        En este lugar, contamos con instructores expertos, el mejor equipo y todas las medidas de seguridad para
+        garantizar una enseñanza de calidad en el deporte que amamos. Además, transmitimos nuestra filosofía de vida,
+        donde la conexión con la naturaleza y el respeto por el mar son valores fundamentales. ¡Surfea con nosotros y
+        vive la experiencia O'maii!
+      </p>
+    </section>
+    
+    <section>
+      <div data-aos="fade-down" data-aos-duration="1500" class="productos-index__texto">
+        <h2 class="productos-index__cabecera-wide">QUEREMOS QUE NUESTROS CLIENTES TENGAN ACCESO A UNA TIENDA CON EQUIPAMIENTOS DE EXCELENTE
+          CALIDAD</h2>
+        <h3 class="productos-index__oferta-wide">¡Oferta! - Nuestros <strong class="productos-index__strong-wide">mejores</strong> productos del 2023</h3>
+          <!-- ⇧ visible en resoluciones altas -->
+          <!-- ⇩ visible en resoluciones bajas -->
+        <h2 class="productos-index__cabecera-narrow">LOS MEJORES EQUIPAMIENTOS EN UNA SOLA TIENDA</h2>
+        <h3 class="productos-index__h3-narrow">¡Oferta!</h3>
+        <h3 class="productos-index__h3-narrow">Lo <strong class="productos-index__strong-narrow">mejor</strong> del 2023</h3>
+      </div>
+      <div class="grilla-productos">
+        <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300" class="grilla-productos__celda-neopreno">
+          <article class="tarjeta">
+            <a href="./img/trajedeneoprene.jpg" data-lightbox="surf" data-title="Traje de neoprene"><img src="./img/trajedeneoprene.jpg" alt="traje de neopreno" class="tarjeta__img-neoprene"></a>
+            <div class="tarjeta__body">
+              <h3 class="tarjeta__titulo">Traje de neoprene</h3>
+              <span><span class="tarjeta__span">$15000</span> $7000</span>
+              <a href="./pages/productos.html" target="_blank" class="btn">Ir a tienda</a>
+            </div>
+          </article>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="300" class="grilla-productos__celda-tabla">
+          <article class="tarjeta">
+            <a href="./img/tabla-blanca.png" data-lightbox="surf" data-title="Tabla de Surf"><img src="./img/tabla-blanca.png" alt="tabla blanca" class="tarjeta__img-tablablanca"></a>
+            <div class="tarjeta__body">
+              <h3 class="tarjeta__titulo">Tabla de Surf</h3>
+              <span><span class="tarjeta__span">$40000</span> $30000</span>
+              <a href="./pages/productos.html" target="_blank" class="btn">Ir a tienda</a>
+            </div>
+          </article>
+        </div>
+        <div data-aos="flip-left" data-aos-duration="1500" data-aos-delay="300" class="grilla-productos__celda-quillon">
+          <article class="tarjeta">
+            <a href="./img/quillon.jpg" data-lightbox="surf" data-title="Quillón"><img src="./img/quillon.jpg" alt="quillon" class="tarjeta__img-quillon"></a>
+            <div class="tarjeta__body">
+              <h3 class="tarjeta__titulo">Quillón</h3>
+              <span><span class="tarjeta__span">$7000</span> $5000</span>
+              <a href="./pages/productos.html" target="_blank" class="btn">Ir a tienda</a>
+            </div>
+          </article>
+        </div>
+        <div data-aos="flip-right" data-aos-duration="1500" data-aos-delay="300" class="grilla-productos__celda-leash">
+          <article class="tarjeta">
+            <a href="./img/leash.jpg"  data-lightbox="surf" data-title="Leash"><img src="./img/leash.jpg" alt="leash" class="tarjeta__img-leash"></a>
+            <div class="tarjeta__body">
+              <h3 class="tarjeta__titulo">Leash</h3>
+              <span><span class="tarjeta__span">$5000</span> $2500</span>
+              <a href="./pages/productos.html" target="_blank" class="btn">Ir a tienda</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section class="reserva">
+      <div data-aos="fade-up" data-aos-duration="1500" class="reserva__texto">
+        <h2 class="reserva__titulo">¡Reservá tu Clase!</h2>
+        <p class="reserva__parrafo">
+          Podes reservar tus clases de manera online. Lo único que necesitás
+          hacer es crear tu cuenta en nuestra página y luego completar los datos
+          en la sección de reservas. De esta forma procederemos a enviarte un
+          mail, para darte toda la info.
+        </p>
+        <div>
+          <a href="./pages/contacto.html" class="reserva__btn" target="_blank">REGISTRARSE</a>
+          <a href="./pages/clases.html" class="reserva__btn">RESERVAR</a>
+        </div>
+      </div>
+      <div data-aos="fade-zoom-in" class="reserva__cont-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xWUnQ_tr94o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+    
+    <!-- Este span es para el enlace que permite (desde abajo) transportarnos al header con un click -->
+    <span id="subir" class="subir"></span>
+    <!-- Este hypertext es para el icono que es una flecha y nos transporta al header -->
+    <a href="#subir"><img src="./img/flechitaparaarriba.png" class="icono-flecha" alt="icono flecha"></a>
+  </main>
+  
+  <footer>
+    
+    <div class="footer__grilla-iconos">
+      <div class="footer__linea-izq"></div>
+      <div class="footer__iconos">
+        <img src="./img/iconofacebook.jpg" class="footer__icono-facebook" alt="icono facebook">
+        <img src="./img/iconoinstagram.jpg" class="footer__icono-instagram" alt="icono instagram">
+        <img src="./img/iconotwitter.jpg" class="footer__icono-twitter" alt="icono twitter">
+        <img src="./img/iconoyoutube.jpg" class="footer__icono-youtube" alt="icono youtube">
+        <img src="./img/iconotelefono.jpg" class="footer__icono-telefono" alt="icono telefono">
+      </div>
+      <div class="footer__linea-der"></div>
+    </div>
+    <div class="footer__cont-logo-cpy">
+      <span class="footer__logo">O'maii Surfing™</span>
+      <div class="footer__cpy">
+        <img src="./img/iconocopyright.jpg" class="footer__icono-cpy" alt="icono copyright">
+        <span>O'maii Surfing Todos los derechos reservados, 2022</span>
+      </div>
+    </div>
+    
+    <form action="https://formsubmit.co/betonunez.2104@gmail.com" method="POST" class="form">
+      <label for="campo-de-mensaje">Escribinos un mensaje</label>
+      <div>
+        <label for="asunto">Asunto</label>
+        <select name="asunto" id="asunto">
+          <option value="mensaje">Mensaje</option>
+          <option value="reclamo">Reclamo</option>
+          <option value="recomendacion">Recomendación</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div>
+        <textarea name="campo-de-mensaje" id="campo-de-mensaje" cols="30" rows="10"></textarea>
+      </div>
+      <button type="submit" class="form__btn">Enviar</button>
+    </form>
+    <div class="footer__cont-links">
+      <a class="footer__link" href="about:blank" target="_blank">Empleos</a>
+      <a class="footer__link" href="https://goo.gl/maps/MazqUZEDk6XJ3abV8" target="_blank">Mapa del sitio</a>
+      <a class="footer__link" href="about:blank" target="_blank">Preguntas frecuentes</a>
+    </div>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

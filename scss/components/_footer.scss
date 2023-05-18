@@ -1,0 +1,135 @@
+footer {
+  margin-bottom: 20px;
+}
+
+.footer {
+  &__grilla-iconos {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 30px 30px;
+    @include w1250 () {
+      grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+    @include w800 () {
+      grid-template-columns: 25% 50% 25%;
+    }
+    @include w560 () {
+      grid-template-columns: 20% 60% 20%;
+    }
+    @include w430 () {
+      grid-template-columns: 15% 70% 15%;
+    }
+    @include w360 () {
+      grid-template-columns: 10% 80% 10%;
+    }
+  }
+  &__iconos {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  &__icono-facebook {
+    width: 50px;
+    @include w430 () {
+      width: 42.5px;
+    }
+  }
+  &__icono-instagram {
+    width: 46px;
+    @include w430 () {
+      width: 39px;
+    }
+  }
+  &__icono-youtube {
+    width: 50px;
+    @include w430 () {
+      width: 42.5px;
+    }
+  }
+  &__icono-twitter {
+    width: 49px;
+    @include w430 () {
+      width: 41.5px;
+    }
+  }
+  &__icono-telefono {
+    width: 48px;
+    @include w430 () {
+      width: 41px;
+    }
+  }
+  &__linea-izq {
+    @include footer-line ();
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  &__linea-der {
+    @include footer-line ();
+    grid-column: 3/4;
+    grid-row: 2;
+  }
+  &__cont-logo-cpy {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  &__logo {
+    font-family: $tipo-caveat;
+    font-size: 3rem;
+    @include w660 () {
+      font-size: 2.5rem;
+    }
+  }
+  &__cpy {
+    display: flex;
+    gap: 5px;
+    @include w660 () {
+      font-size: 0.9rem;
+    }
+    @include w430 () {
+      font-size: 0.75rem;
+    }
+  }
+  &__icono-cpy {
+    width: 25px;
+    margin-top: -4px;
+  }
+  &__cont-links {
+    margin-top: 10px;
+    text-decoration: underline $color-azul;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__link {
+    color: $color-azul;
+    @include w430 () {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  @include w430 () {
+    font-size: 0.8rem;
+  }
+  &__btn {
+    width: 52px; 
+    height: 25px;
+  }
+  
+}
+
+
+

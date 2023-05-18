@@ -1,0 +1,76 @@
+.header {
+  &__item {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+  }
+  &__icon {
+    width: 25px;
+  }
+}
+
+.header-secciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include w725 () {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__titulo {
+    font-size: 1rem;
+    padding: 1.25em;
+    @include w725 () {
+      padding: 0.8em;
+    }
+  }
+  &__titulo-link {
+    font-family: $tipo-caveat;
+    font-size: 3rem;
+    color: $color-negro;
+    @include w879 () {
+      font-size: 2.5rem;
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 1em 2em 1em 0;
+    @include w725 () {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 0.5em 0;
+    }
+  }
+  &__list-usuario {
+    display: flex;
+    font-size: 1rem;
+    padding: 0.625em;
+    gap: 20px;
+  }
+  &__list-navegacion {
+    display: flex;
+    align-self: end;
+    font-size: 1rem;
+    padding: 0.625em;
+    gap: 20px;
+    @include w725 () {
+      align-self: center;
+      margin-left: 15px;
+    }
+  }
+  &__item-link {
+    color: $color-negro;
+    font-weight: bold;
+    font-size: 1.15rem;
+    @include w990 () {
+      font-size: 1.1rem;
+    }
+    @include w879 () {
+      font-size: 1rem;
+    }
+  }
+}
